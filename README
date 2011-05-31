@@ -1,6 +1,62 @@
-The Digital Parrot
+=The Digital Parrot=
 
 The Digital Parrot is research software; it is an implementation of the
 retrieval aspects of an augmented memory system based on Cognitive
 Psychology. For more information, see http://hdl.handle.net/10289/5263.
 
+==Installation==
+
+===Compilation===
+
+The Digital Parrot uses Webrenderer for the map view. You'll need to
+download the appropriate version of Webrenderer (Swing edition) for
+your operating system here:
+http://www.webrenderer.com/products/swing/product/
+
+You should receive an archive that contains, among other files, three
+jar files. You need to install these into your local maven
+repository. An example for Linux and Webrenderer version 5.0.9:
+
+$ mvn install:install-file -DgroupId=com.webrenderer \
+-DartifactId=corecomponents-swing-linux -Dversion=5.0.9 -Dpackaging=jar \
+-Dfile=corecomponents-swing-linux.jar
+
+$ mvn install:install-file -DgroupId=com.webrenderer \
+-DartifactId=webrenderer-swing-linux -Dversion=5.0.9 -Dpackaging=jar \
+-Dfile=webrenderer-swing-linux.jar
+
+$ mvn install:install-file -DgroupId=com.webrenderer \
+-DartifactId=webrenderer-swing -Dversion=5.0.9 -Dpackaging=jar \
+-Dfile=webrenderer-swing.jar
+
+If you're using a different operating system or a different version of
+Webrenderer, you'll need to adjust the dependencies in pom.xml
+appropriately.
+
+Then use maven to build the Digital Parrot using mvn package. This
+will give you the file digital-parrot-1.0-SNAPSHOT.jar in the target
+subdirectory.
+
+===Webrenderer license, ontologies=== 
+
+Create a directory called .digital-parrot in your home directory. In
+this directory, create a file called parrot.properties with the
+following structure:
+
+<pre>
+[map view license info]
+webrenderer.license.type = <license type, eg 30dtrial>
+webrenderer.license.data = <license key>
+</pre>
+
+Fill in your Webrenderer license type and key; if you downloaded the
+30-day trial version, you will find this in the file TestBrowser.java
+that came with the download.
+
+Copy the directory src/main/resources/owl and its contents into your
+.digital-parrot directory.
+
+==Running==
+
+To run the Digital Parrot on a given data file:
+$ java -jar target/digital-parrot-1.0-SNAPSHOT.jar -f /path/to/data.rdf
