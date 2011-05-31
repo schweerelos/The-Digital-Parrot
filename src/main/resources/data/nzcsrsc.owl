@@ -1,0 +1,969 @@
+<rdf:RDF xmlns="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#"
+    xmlns:conf="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:interact="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#"
+    xmlns:nzcs="file:data/nzcsrsc.n3#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:parrot="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:timeplace="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#">
+
+    <owl:Ontology rdf:about="file:data/nzcsrsc.n3">
+        <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl"/>
+        <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl"/>
+        <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl"/>
+    </owl:Ontology>
+
+    <conf:Break rdf:about="file:data/nzcsrsc.n3#AfternoonBreakWednesdayNZCSRSC09">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-08T16:00:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#WhareKai"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-08T15:30:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Break</rdfs:label>
+    </conf:Break>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#AfternoonTeaMondayCHINZ09">
+        <during rdf:resource="file:data/nzcsrsc.n3#CHINZ2009"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-06T15:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#OwenGlennBuilding"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-06T15:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Afternoon Tea</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#AfternoonTeaWednesdayNZCSRSC08">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-16T15:40:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#CBlock"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-16T15:20:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Afternoon tea</rdfs:label>
+    </conf:SocialEvent>
+
+    <foaf:Person rdf:about="file:data/nzcsrsc.n3#Alexander">
+        <rdfs:label xml:lang="en">Alexander L</rdfs:label>
+    </foaf:Person>
+
+    <foaf:Person rdf:about="file:data/nzcsrsc.n3#Amy">
+        <rdfs:label xml:lang="en">Amy T</rdfs:label>
+    </foaf:Person>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#AssembleNZCSRSC08">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-14T15:15:00+13:00</endsAt>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-43.523545</lat>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#CanterburyUni"/>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">172.582319</long>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-14T15:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Assemble</rdfs:label>
+    </conf:SocialEvent>
+
+    <nzcs:City rdf:about="file:data/nzcsrsc.n3#Auckland">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#CityPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-36.847384</lat>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">174.765733</long>
+        <rdfs:label xml:lang="en">Auckland</rdfs:label>
+    </nzcs:City>
+
+    <PlacedThing rdf:about="file:data/nzcsrsc.n3#AucklandHarbour">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#SuburbPrecision"/>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#Auckland"/>
+        <rdfs:label xml:lang="en">Auckland Harbour</rdfs:label>
+    </PlacedThing>
+
+    <nzcs:Campus rdf:about="file:data/nzcsrsc.n3#AucklandUni">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#BlockPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-36.85167</lat>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#Auckland"/>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">174.769574</long>
+        <rdfs:label xml:lang="en">Auckland University</rdfs:label>
+    </nzcs:Campus>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#BBQDinnerNZCSRSC08">
+        <during rdf:resource="file:data/nzcsrsc.n3#OrionHealthNightNZCSRSC08"/>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#UCSAFoundry"/>
+        <rdfs:label xml:lang="en">BBQ Dinner</rdfs:label>
+    </conf:SocialEvent>
+
+    <nzcs:Building rdf:about="file:data/nzcsrsc.n3#BishopJulius">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#BuildingPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-43.524344</lat>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#CanterburyUni"/>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">172.573371</long>
+        <rdfs:label xml:lang="en">Bishop Julius</rdfs:label>
+    </nzcs:Building>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#BreakfastThursdayNZCSRSC08">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-17T08:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#BishopJulius"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-17T07:30:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Breakfast</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#BreakfastThursdayNZCSRSC09">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-09T08:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#WhareKai"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-09T07:30:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Breakfast</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#BreakfastTuesdayNZCSRSC08">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-15T08:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#BishopJulius"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-15T07:30:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Breakfast</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#BreakfastTuesdayNZCSRSC09">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-07T08:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#WhareKai"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-07T07:30:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Breakfast</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#BreakfastWednesdayNZCSRSC08">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-16T08:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#BishopJulius"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-16T07:30:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Breakfast</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#BreakfastWednesdayNZCSRSC09">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-08T08:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#WhareKai"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-08T07:30:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Breakfast</rdfs:label>
+    </conf:SocialEvent>
+
+    <rdf:Description rdf:about="file:data/nzcsrsc.n3#Building">
+        <parrot:showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</parrot:showThisType>
+        <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#PlacedThing"/>
+    </rdf:Description>
+
+    <nzcs:Room rdf:about="file:data/nzcsrsc.n3#C1LectureTheatre">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#RoomPrecision"/>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#CLectureBuilding"/>
+        <rdfs:label xml:lang="en">C1 Lecture Theatre</rdfs:label>
+    </nzcs:Room>
+
+    <nzcs:Room rdf:about="file:data/nzcsrsc.n3#C3LectureTheatre">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#RoomPrecision"/>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#CLectureBuilding"/>
+        <rdfs:label xml:lang="en">C3 Lecture Theatre</rdfs:label>
+    </nzcs:Room>
+
+    <conf:ConferenceSeries rdf:about="file:data/nzcsrsc.n3#CHINZ">
+        <rdfs:label>NZ CHI Conferences</rdfs:label>
+    </conf:ConferenceSeries>
+
+    <conf:Conference rdf:about="file:data/nzcsrsc.n3#CHINZ07">
+        <conf:partOfSeries rdf:resource="file:data/nzcsrsc.n3#CHINZ"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-07-04T15:00:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#WaikatoUni"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-07-03T09:00:00+13:00</startsAt>
+        <rdfs:label>CHINZ 2007</rdfs:label>
+    </conf:Conference>
+
+    <conf:Conference rdf:about="file:data/nzcsrsc.n3#CHINZ2009">
+        <conf:partOfSeries rdf:resource="file:data/nzcsrsc.n3#CHINZ"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-07T18:00:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#AucklandUni"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-06T10:00:00+13:00</startsAt>
+        <rdfs:label>CHINZ 2009</rdfs:label>
+    </conf:Conference>
+
+    <nzcs:Building rdf:about="file:data/nzcsrsc.n3#CLectureBuilding">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#BuildingPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-43.523128</lat>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#CanterburyUni"/>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">172.583714</long>
+        <rdfs:label xml:lang="en">Lecture Theatre</rdfs:label>
+    </nzcs:Building>
+
+    <rdf:Description rdf:about="file:data/nzcsrsc.n3#Campus">
+        <parrot:showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</parrot:showThisType>
+        <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#PlacedThing"/>
+    </rdf:Description>
+
+    <nzcs:Campus rdf:about="file:data/nzcsrsc.n3#CanterburyUni">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#BlockPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-43.52</lat>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#Christchurch"/>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">172.58</long>
+        <rdfs:label xml:lang="en">Canterbury University</rdfs:label>
+    </nzcs:Campus>
+
+    <conf:PresentationSession rdf:about="file:data/nzcsrsc.n3#ChalkNTalk">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-15T14:00:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#CBlock"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-15T13:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Chalk'n'talk sessions</rdfs:label>
+    </conf:PresentationSession>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#CheckInNZCSRSC08">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-14T14:45:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#BishopJulius"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-14T13:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Check in</rdfs:label>
+    </conf:SocialEvent>
+
+    <nzcs:City rdf:about="file:data/nzcsrsc.n3#Christchurch">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#CityPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-43.531432</lat>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">172.636628</long>
+        <rdfs:label xml:lang="en">Christchurch</rdfs:label>
+    </nzcs:City>
+
+    <foaf:Person rdf:about="file:data/nzcsrsc.n3#Christopher">
+        <rdfs:label xml:lang="en">Christopher A</rdfs:label>
+    </foaf:Person>
+
+    <rdf:Description rdf:about="file:data/nzcsrsc.n3#City">
+        <parrot:showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</parrot:showThisType>
+        <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#PlacedThing"/>
+    </rdf:Description>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#ClosingLunchNZCSRSC09">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-09T13:45:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#WhareKai"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-09T12:20:00+13:00</startsAt>
+        <rdfs:label>Closing lunch and awards ceremony</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#ClosingNZCSRSC08">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-17T12:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#UCSAShelleyCommonRoom"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-17T12:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Awards and Closing</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#ComedyNight">
+        <during rdf:resource="file:data/nzcsrsc.n3#OrionHealthNightNZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-15T21:45:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#NgaioMarshTheatre"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-15T20:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">BBQ Dinner</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:Break rdf:about="file:data/nzcsrsc.n3#ConferencePhotoNZCSRSC09">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-07T12:40:00+13:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-07T12:20:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Conference photo</rdfs:label>
+    </conf:Break>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#DinnerCHINZ09">
+        <during rdf:resource="file:data/nzcsrsc.n3#CHINZ2009"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-06T20:00:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#SpicersRestaurant"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-06T18:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Dinner</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#DinnerCruise">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-07T21:00:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#AucklandHarbour"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-07T18:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Orion Health Social Night</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:Session rdf:about="file:data/nzcsrsc.n3#DiscussionGroups">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-08T13:50:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#WhareKai"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-08T12:20:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Discussion groups and lunch</rdfs:label>
+    </conf:Session>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#DrinksCHINZ09">
+        <during rdf:resource="file:data/nzcsrsc.n3#CHINZ2009"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-06T18:00:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#SpicersRestaurant"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-06T17:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Drinks</rdfs:label>
+    </conf:SocialEvent>
+
+    <nzcs:Building rdf:about="file:data/nzcsrsc.n3#FalePacifica">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#BuildingPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-36.852233</lat>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#AucklandUni"/>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">174.772152</long>
+        <rdfs:label xml:lang="en">Fale Pacifica</rdfs:label>
+    </nzcs:Building>
+
+    <foaf:Person rdf:about="file:data/nzcsrsc.n3#Gabriel">
+        <rdfs:label xml:lang="en">Gabriel K</rdfs:label>
+    </foaf:Person>
+
+    <nzcs:Room rdf:about="file:data/nzcsrsc.n3#HITLab">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#BuildingPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-43.522088</lat>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#CanterburyUni"/>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">172.582823</long>
+        <rdfs:label xml:lang="en">HIT Lab</rdfs:label>
+    </nzcs:Room>
+
+    <nzcs:City rdf:about="file:data/nzcsrsc.n3#Hamilton">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#CityPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-37.78752</lat>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">175.282386</long>
+        <rdfs:label xml:lang="en">Hamilton</rdfs:label>
+    </nzcs:City>
+
+    <conf:PresentationSession rdf:about="file:data/nzcsrsc.n3#HealthAndEducationSessionCHINZ09">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#CHINZ2009"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-06T15:00:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#OwenGlennBuilding"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-06T11:30:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Papers - Health and Education</rdfs:label>
+    </conf:PresentationSession>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#IndustryDinner">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#Scala"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-08T18:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Industry dinner</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#IndustryDinnerNZCSRSC08">
+        <during rdf:resource="file:data/nzcsrsc.n3#IndustryEventNZCSRSC08"/>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#UCSAUpperCommonRoom"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-16T18:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Industry dinner</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#IndustryEventNZCSRSC08">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-16T21:00:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#CanterburyUni"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-16T18:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">NZi3 Industry Event</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#IndustryMixerNZCSRSC08">
+        <during rdf:resource="file:data/nzcsrsc.n3#IndustryEventNZCSRSC08"/>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#HITLab"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-16T19:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Industry mixer</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:KeynoteTalk rdf:about="file:data/nzcsrsc.n3#KeynoteMondayCHINZ09">
+        <conf:hasPresenter rdf:resource="file:data/nzcsrsc.n3#StephenBrewster"/>
+        <conf:inSession rdf:resource="file:data/nzcsrsc.n3#KeynoteSessionMondayCHINZ09"/>
+        <rdfs:label xml:lang="en">Opening Keynote</rdfs:label>
+    </conf:KeynoteTalk>
+
+    <conf:PresentationSession rdf:about="file:data/nzcsrsc.n3#KeynoteSessionMondayCHINZ09">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#CHINZ2009"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-06T12:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#OwenGlennBuilding"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-06T11:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Keynote Session</rdfs:label>
+    </conf:PresentationSession>
+
+    <conf:PresentationSession rdf:about="file:data/nzcsrsc.n3#KeynoteSessionThursdayNZCSRSC08">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-17T12:00:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#UCSAShelleyCommonRoom"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-17T11:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">a keynote session</rdfs:label>
+    </conf:PresentationSession>
+
+    <conf:PresentationSession rdf:about="file:data/nzcsrsc.n3#KeynoteSessionThursdayNZCSRSC09">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-09T12:20:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#OwenGlennBuilding"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-09T11:20:00+13:00</startsAt>
+        <rdfs:label>a keynote session</rdfs:label>
+    </conf:PresentationSession>
+
+    <conf:PresentationSession rdf:about="file:data/nzcsrsc.n3#KeynoteSessionTuesdayNZCSRSC08">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-15T12:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#C3LectureTheatre"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-15T11:30:00+13:00</startsAt>
+        <rdfs:label>a keynote session</rdfs:label>
+    </conf:PresentationSession>
+
+    <conf:PresentationSession rdf:about="file:data/nzcsrsc.n3#KeynoteSessionTuesdayNZCSRSC09">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-07T12:20:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#OwenGlennBuilding"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-07T11:20:00+13:00</startsAt>
+        <rdfs:label>a keynote session</rdfs:label>
+    </conf:PresentationSession>
+
+    <conf:PresentationSession rdf:about="file:data/nzcsrsc.n3#KeynoteSessionWednesdayNZCSRSC08">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-16T12:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#C2LectureTheatre"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-16T11:30:00+13:00</startsAt>
+        <rdfs:label>a keynote session</rdfs:label>
+    </conf:PresentationSession>
+
+    <conf:PresentationSession rdf:about="file:data/nzcsrsc.n3#KeynoteSessionWednesdayNZCSRSC09">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-08T12:20:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#OwenGlennBuilding"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-08T11:20:00+13:00</startsAt>
+        <rdfs:label>a keynote session</rdfs:label>
+    </conf:PresentationSession>
+
+    <conf:KeynoteTalk rdf:about="file:data/nzcsrsc.n3#KeynoteThursdayNZCSRSC08">
+        <conf:hasPresenter rdf:resource="file:data/nzcsrsc.n3#DavidPark"/>
+        <conf:inSession rdf:resource="file:data/nzcsrsc.n3#KeynoteSessionThursdayNZCSRSC08"/>
+        <rdfs:label xml:lang="en">Keynote David Park</rdfs:label>
+    </conf:KeynoteTalk>
+
+    <conf:KeynoteTalk rdf:about="file:data/nzcsrsc.n3#KeynoteThursdayNZCSRSC09">
+        <conf:hasPresenter rdf:resource="file:data/nzcsrsc.n3#PoulNielsen"/>
+        <conf:inSession rdf:resource="file:data/nzcsrsc.n3#KeynoteSessionThursdayNZCSRSC09"/>
+        <rdfs:label xml:lang="en">Keynote 3</rdfs:label>
+    </conf:KeynoteTalk>
+
+    <conf:KeynoteTalk rdf:about="file:data/nzcsrsc.n3#KeynoteTuesdayNZCSRSC08">
+        <conf:hasPresenter rdf:resource="file:data/nzcsrsc.n3#EdwinDando"/>
+        <conf:inSession rdf:resource="file:data/nzcsrsc.n3#KeynoteSessionTuesdayNZCSRSC08"/>
+        <rdfs:label xml:lang="en">Keynote Edwin Dando</rdfs:label>
+    </conf:KeynoteTalk>
+
+    <conf:KeynoteTalk rdf:about="file:data/nzcsrsc.n3#KeynoteTuesdayNZCSRSC09">
+        <conf:hasPresenter rdf:resource="file:data/nzcsrsc.n3#AlanBlackwell"/>
+        <conf:inSession rdf:resource="file:data/nzcsrsc.n3#KeynoteSessionTuesdayNZCSRSC09"/>
+        <rdfs:label xml:lang="en">Keynote 1</rdfs:label>
+    </conf:KeynoteTalk>
+
+    <conf:KeynoteTalk rdf:about="file:data/nzcsrsc.n3#KeynoteWednesdayNZCSRSC08">
+        <conf:hasPresenter rdf:resource="file:data/nzcsrsc.n3#DaveLane"/>
+        <conf:inSession rdf:resource="file:data/nzcsrsc.n3#KeynoteSessionWednesdayNZCSRSC08"/>
+        <rdfs:label>Keynote Dave Lane</rdfs:label>
+    </conf:KeynoteTalk>
+
+    <conf:KeynoteTalk rdf:about="file:data/nzcsrsc.n3#KeynoteWednesdayNZCSRSC09">
+        <conf:hasPresenter rdf:resource="file:data/nzcsrsc.n3#JPLewis"/>
+        <conf:inSession rdf:resource="file:data/nzcsrsc.n3#KeynoteSessionWednesdayNZCSRSC09"/>
+        <rdfs:label xml:lang="en">Keynote 2</rdfs:label>
+    </conf:KeynoteTalk>
+
+    <foaf:Person rdf:about="file:data/nzcsrsc.n3#KyleWellington">
+        <rdfs:label xml:lang="en">Kyle</rdfs:label>
+    </foaf:Person>
+
+    <foaf:Person rdf:about="file:data/nzcsrsc.n3#Liam">
+        <rdfs:label xml:lang="en">Liam W</rdfs:label>
+    </foaf:Person>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#LunchMondayCHINZ09">
+        <during rdf:resource="file:data/nzcsrsc.n3#CHINZ2009"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-06T13:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#OwenGlennBuilding"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-06T12:30:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Lunch</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:Break rdf:about="file:data/nzcsrsc.n3#LunchNZCSRSC09">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-07T13:40:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#WhareKai"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-07T12:40:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Lunch</rdfs:label>
+    </conf:Break>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#LunchThursdayNZCSRSC08">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-17T14:00:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#UCSAShelleyCommonRoom"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-17T12:30:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Lunch</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#LunchTuesdayNZCSRSC08">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-15T14:00:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#CBlock"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-15T13:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Lunch</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#LunchWednesdayNZCSRSC08">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-16T13:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#CBlock"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-16T12:30:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Lunch</rdfs:label>
+    </conf:SocialEvent>
+
+    <nzcs:Building rdf:about="file:data/nzcsrsc.n3#MaraeAuckland">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#BuildingPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-36.85146</lat>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#AucklandUni"/>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">174.772789</long>
+        <rdfs:label xml:lang="en">Marae</rdfs:label>
+    </nzcs:Building>
+
+    <conf:Break rdf:about="file:data/nzcsrsc.n3#MorningBreakThursdayNZCSRSC09">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-09T11:20:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#WhareKai"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-09T10:50:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Break</rdfs:label>
+    </conf:Break>
+
+    <conf:Break rdf:about="file:data/nzcsrsc.n3#MorningBreakTuesdayNZCSRSC09">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-07T11:20:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#WhareKai"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-07T10:50:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Break</rdfs:label>
+    </conf:Break>
+
+    <conf:Break rdf:about="file:data/nzcsrsc.n3#MorningBreakWednesdayNZCSRSC09">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-08T11:20:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#WhareKai"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-08T10:50:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Break</rdfs:label>
+    </conf:Break>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#MorningTeaThursdayNZCSRSC08">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-17T11:00:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#CBlock"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-17T10:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Morning tea</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#MorningTeaTuesdayNZCSRSC08">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-15T11:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#CBlock"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-15T11:10:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Morning tea</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#MorningTeaWednesdayNZCSRSC08">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-16T11:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#CBlock"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-16T11:10:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Morning tea</rdfs:label>
+    </conf:SocialEvent>
+
+    <foaf:Organization rdf:about="file:data/nzcsrsc.n3#MozillaNZ">
+        <rdfs:label xml:lang="en">Mozilla NZ</rdfs:label>
+    </foaf:Organization>
+
+    <foaf:Person rdf:about="file:data/nzcsrsc.n3#MozillaRobert">
+        <rdfs:label xml:lang="en">Robert O</rdfs:label>
+        <foaf:fundedBy rdf:resource="file:data/nzcsrsc.n3#MozillaNZ"/>
+    </foaf:Person>
+
+    <conf:ConferenceSeries rdf:about="file:data/nzcsrsc.n3#NZCSRSC">
+        <rdfs:label>NZ CS Research Student Conferences</rdfs:label>
+    </conf:ConferenceSeries>
+
+    <conf:Conference rdf:about="file:data/nzcsrsc.n3#NZCSRSC07">
+        <conf:partOfSeries rdf:resource="file:data/nzcsrsc.n3#NZCSRSC"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-04-13T14:00:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#WaikatoUni"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-04-10T15:30:00+13:00</startsAt>
+        <rdfs:label>NZCSRSC 2007</rdfs:label>
+    </conf:Conference>
+
+    <conf:Conference rdf:about="file:data/nzcsrsc.n3#NZCSRSC08">
+        <conf:partOfSeries rdf:resource="file:data/nzcsrsc.n3#NZCSRSC"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-17T14:00:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#CanterburyUni"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-14T13:00:00+13:00</startsAt>
+        <rdfs:label>NZCSRSC 2008</rdfs:label>
+    </conf:Conference>
+
+    <conf:Conference rdf:about="file:data/nzcsrsc.n3#NZCSRSC09">
+        <conf:partOfSeries rdf:resource="file:data/nzcsrsc.n3#NZCSRSC"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-09T13:45:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#AucklandUni"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-06T15:00:00+13:00</startsAt>
+        <rdfs:label>NZCSRSC 2009</rdfs:label>
+    </conf:Conference>
+
+    <conf:Conference rdf:about="file:data/nzcsrsc.n3#NZCSRSC10">
+        <conf:partOfSeries rdf:resource="file:data/nzcsrsc.n3#NZCSRSC"/>
+        <rdfs:label>NZCSRSC 2010</rdfs:label>
+    </conf:Conference>
+
+    <nzcs:Room rdf:about="file:data/nzcsrsc.n3#NgaioMarshTheatre">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#RoomPrecision"/>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#UCSABuilding"/>
+        <rdfs:label xml:lang="en">Ngaio Marsh Theatre</rdfs:label>
+    </nzcs:Room>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#OpeningDinnerNZCSRSC08">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-14T21:00:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#UCSABallRoom"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-14T18:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Opening Dinner and after dinner presentation</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#OpeningDinnerNZCSRSC09">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-06T20:00:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#FalePacifica"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-06T18:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Endace Opening Dinner</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#OpeningNZCSRSC08">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-14T15:45:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#C2LectureTheatre"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-14T15:15:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Opening Ceremony</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#OrionHealthNightNZCSRSC08">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-15T21:45:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#CanterburyUni"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-15T18:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Orion Health Social Night</rdfs:label>
+    </conf:SocialEvent>
+
+    <nzcs:Building rdf:about="file:data/nzcsrsc.n3#OwenGlennBuilding">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#BuildingPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-36.853208</lat>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#AucklandUni"/>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">174.771111</long>
+        <rdfs:label xml:lang="en">Owen G. Glenn Building</rdfs:label>
+    </nzcs:Building>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#PhotoSessionNZCSRSC08">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-15T13:00:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#CanterburyUni"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-15T12:30:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Photo session</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:PosterSession rdf:about="file:data/nzcsrsc.n3#PosterSessionNZCSRSC08">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-15T18:00:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#CBlock"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-15T15:50:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Poster Session</rdfs:label>
+    </conf:PosterSession>
+
+    <conf:PosterSession rdf:about="file:data/nzcsrsc.n3#PostersNZCSRSC09">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-07T17:00:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#WhareKai"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-07T15:30:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Poster session</rdfs:label>
+    </conf:PosterSession>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#PowhiriNZCSRSC09">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-06T17:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#MaraeAuckland"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-06T16:30:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Powhiri</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:PresentationSession rdf:about="file:data/nzcsrsc.n3#Presentations1NZCSRSC09">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-07T10:50:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#OwenGlennBuilding"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-07T09:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Presentation session 1</rdfs:label>
+    </conf:PresentationSession>
+
+    <conf:PresentationSession rdf:about="file:data/nzcsrsc.n3#Presentations2NZCSRSC09">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-07T15:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#OwenGlennBuilding"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-07T13:40:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Presentation session 2</rdfs:label>
+    </conf:PresentationSession>
+
+    <conf:PresentationSession rdf:about="file:data/nzcsrsc.n3#Presentations3NZCSRSC09">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-08T10:50:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#OwenGlennBuilding"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-08T09:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Presentation session 3</rdfs:label>
+    </conf:PresentationSession>
+
+    <conf:PresentationSession rdf:about="file:data/nzcsrsc.n3#Presentations4NZCSRSC09">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-08T15:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#OwenGlennBuilding"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-08T13:50:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Presentation session 4</rdfs:label>
+    </conf:PresentationSession>
+
+    <conf:PresentationSession rdf:about="file:data/nzcsrsc.n3#Presentations5NZCSRSC09">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-09T10:50:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#OwenGlennBuilding"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-09T09:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Presentation session 5</rdfs:label>
+    </conf:PresentationSession>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#RegistrationCHINZ09">
+        <during rdf:resource="file:data/nzcsrsc.n3#CHINZ2009"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-06T10:45:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#OwenGlennBuilding"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-06T10:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Registration</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#RegistrationNZCSRSC09">
+        <during rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-06T16:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#OwenGlennBuilding"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-06T15:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Registration</rdfs:label>
+    </conf:SocialEvent>
+
+    <rdf:Description rdf:about="file:data/nzcsrsc.n3#Room">
+        <parrot:showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</parrot:showThisType>
+        <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#PlacedThing"/>
+    </rdf:Description>
+
+    <foaf:Person rdf:about="file:data/nzcsrsc.n3#Ruby">
+        <rdfs:label xml:lang="en">Ruby B</rdfs:label>
+    </foaf:Person>
+
+    <PlacedThing rdf:about="file:data/nzcsrsc.n3#Scala">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#RoomPrecision"/>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#AucklandUni"/>
+        <rdfs:label xml:lang="en">Scala</rdfs:label>
+    </PlacedThing>
+
+    <interact:Topic rdf:about="file:data/nzcsrsc.n3#ScubaDiving">
+        <rdfs:label xml:lang="en">Scuba diving</rdfs:label>
+    </interact:Topic>
+
+    <foaf:Person rdf:about="file:data/nzcsrsc.n3#Sean">
+        <rdfs:label xml:lang="en">Sean M</rdfs:label>
+    </foaf:Person>
+
+    <conf:PresentationSession rdf:about="file:data/nzcsrsc.n3#Session1NZCSRSC08">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-15T11:10:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#C3LectureTheatre"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-15T09:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Session 1</rdfs:label>
+    </conf:PresentationSession>
+
+    <conf:PresentationSession rdf:about="file:data/nzcsrsc.n3#Session2NZCSRSC08">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-15T15:50:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#C3LectureTheatre"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-15T14:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Session 2</rdfs:label>
+    </conf:PresentationSession>
+
+    <conf:PresentationSession rdf:about="file:data/nzcsrsc.n3#Session3NZCSRSC08">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-16T11:10:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#C2LectureTheatre"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-16T09:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Session 3</rdfs:label>
+    </conf:PresentationSession>
+
+    <conf:PresentationSession rdf:about="file:data/nzcsrsc.n3#Session4NZCSRSC08">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-16T15:20:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#C2LectureTheatre"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-16T13:30:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Session 4</rdfs:label>
+    </conf:PresentationSession>
+
+    <conf:PresentationSession rdf:about="file:data/nzcsrsc.n3#Session5NZCSRSC08">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-17T10:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#C3LectureTheatre"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-17T09:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Session 5</rdfs:label>
+    </conf:PresentationSession>
+
+    <nzcs:Room rdf:about="file:data/nzcsrsc.n3#SpicersRestaurant">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#RoomPrecision"/>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#OwenGlennBuilding"/>
+        <rdfs:label xml:lang="en">Spicers Restaurant</rdfs:label>
+    </nzcs:Room>
+
+    <conf:PresentationSession rdf:about="file:data/nzcsrsc.n3#SupercomputerSessionNZCSRSC08">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-14T18:00:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#C2LectureTheatre"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-14T16:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">What's so super about the supercomputer?</rdfs:label>
+    </conf:PresentationSession>
+
+    <interact:Conversation rdf:about="file:data/nzcsrsc.n3#TalkingAboutScubaBeforePowhiri">
+        <interact:hasConversationPartner rdf:resource="file:data/nzcsrsc.n3#Alexander"/>
+        <interact:hasConversationPartner rdf:resource="file:data/nzcsrsc.n3#Gabriel"/>
+        <interact:hasTopic rdf:resource="file:data/nzcsrsc.n3#ScubaDiving"/>
+        <before rdf:resource="file:data/nzcsrsc.n3#PowhiriNZCSRSC09"/>
+        <rdfs:label>a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <interact:Conversation rdf:about="file:data/nzcsrsc.n3#TalkingAboutXOsAtPosterSession">
+        <interact:hasConversationPartner rdf:resource="file:data/nzcsrsc.n3#Gabriel"/>
+        <interact:hasTopic rdf:resource="file:data/nzcsrsc.n3#Python"/>
+        <interact:hasTopic rdf:resource="file:data/nzcsrsc.n3#XOs"/>
+        <during rdf:resource="file:data/nzcsrsc.n3#PosterSessionNZCSRSC08"/>
+        <rdfs:label>a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <interact:Conversation rdf:about="file:data/nzcsrsc.n3#TalkingAtDinnerFirstNight">
+        <interact:hasConversationPartner rdf:resource="file:data/nzcsrsc.n3#MozillaRobert"/>
+        <during rdf:resource="file:data/nzcsrsc.n3#OpeningDinnerNZCSRSC09"/>
+        <rdfs:label>a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <interact:Conversation rdf:about="file:data/nzcsrsc.n3#TalkingToAmyAtBreakfast">
+        <interact:hasConversationPartner rdf:resource="file:data/nzcsrsc.n3#Amy"/>
+        <interact:hasTopic rdf:resource="file:data/nzcsrsc.n3#AnitaBorgScholarship"/>
+        <during rdf:resource="file:data/nzcsrsc.n3#BreakfastTuesdayNZCSRSC09"/>
+        <rdfs:label>a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <interact:Conversation rdf:about="file:data/nzcsrsc.n3#TalkingToAmySeanAtBreakfast">
+        <interact:hasConversationPartner rdf:resource="file:data/nzcsrsc.n3#Amy"/>
+        <interact:hasConversationPartner rdf:resource="file:data/nzcsrsc.n3#Sean"/>
+        <interact:hasTopic rdf:resource="file:data/nzcsrsc.n3#AmysResearch"/>
+        <interact:hasTopic rdf:resource="file:data/nzcsrsc.n3#Web2Dot0"/>
+        <during rdf:resource="file:data/nzcsrsc.n3#BreakfastTuesdayNZCSRSC09"/>
+        <rdfs:label>a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <interact:Conversation rdf:about="file:data/nzcsrsc.n3#TalkingToChristopherKyleAtBreakfast">
+        <interact:hasConversationPartner rdf:resource="file:data/nzcsrsc.n3#Christopher"/>
+        <interact:hasConversationPartner rdf:resource="file:data/nzcsrsc.n3#KyleWellington"/>
+        <interact:hasTopic rdf:resource="file:data/nzcsrsc.n3#NZCSRSC10"/>
+        <during rdf:resource="file:data/nzcsrsc.n3#BreakfastTuesdayNZCSRSC09"/>
+        <rdfs:label>a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <interact:Conversation rdf:about="file:data/nzcsrsc.n3#TalkingToGabrielInBreakTuesday">
+        <interact:hasConversationPartner rdf:resource="file:data/nzcsrsc.n3#Gabriel"/>
+        <interact:hasTopic rdf:resource="file:data/nzcsrsc.n3#Python"/>
+        <interact:hasTopic rdf:resource="file:data/nzcsrsc.n3#SocialNetworking"/>
+        <during rdf:resource="file:data/nzcsrsc.n3#MorningBreakTuesdayNZCSRSC09"/>
+        <rdfs:label>a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <interact:Conversation rdf:about="file:data/nzcsrsc.n3#TalkingToLiamInBreak">
+        <interact:hasConversationPartner rdf:resource="file:data/nzcsrsc.n3#Liam"/>
+        <interact:hasTopic rdf:resource="file:data/nzcsrsc.n3#Music"/>
+        <interact:hasTopic rdf:resource="file:data/nzcsrsc.n3#NZCSRSC10"/>
+        <during rdf:resource="file:data/nzcsrsc.n3#MorningBreakTuesdayNZCSRSC09"/>
+        <rdfs:label>a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <interact:Conversation rdf:about="file:data/nzcsrsc.n3#TalkingToRubyBeforeDinner">
+        <interact:hasConversationPartner rdf:resource="file:data/nzcsrsc.n3#Ruby"/>
+        <before rdf:resource="file:data/nzcsrsc.n3#OpeningDinnerNZCSRSC09"/>
+        <rdfs:label>a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <interact:Conversation rdf:about="file:data/nzcsrsc.n3#TalkingToRubyRegistrationCHINZ09">
+        <interact:hasConversationPartner rdf:resource="file:data/nzcsrsc.n3#Ruby"/>
+        <interact:hasTopic rdf:resource="file:data/nzcsrsc.n3#CHINZ2009"/>
+        <interact:hasTopic rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <during rdf:resource="file:data/nzcsrsc.n3#RegistrationCHINZ09"/>
+        <rdfs:label>a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <nzcs:Room rdf:about="file:data/nzcsrsc.n3#UCSABallRoom">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#RoomPrecision"/>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#UCSABuilding"/>
+        <rdfs:label xml:lang="en">UCSA Ball Room</rdfs:label>
+    </nzcs:Room>
+
+    <nzcs:Building rdf:about="file:data/nzcsrsc.n3#UCSABuilding">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#BuildingPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-43.523932</lat>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#CanterburyUni"/>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">172.578971</long>
+        <rdfs:label xml:lang="en">UCSA Building</rdfs:label>
+    </nzcs:Building>
+
+    <nzcs:Room rdf:about="file:data/nzcsrsc.n3#UCSAFoundry">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#RoomPrecision"/>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#UCSABuilding"/>
+        <rdfs:label xml:lang="en">UCSA Foundry</rdfs:label>
+    </nzcs:Room>
+
+    <nzcs:Room rdf:about="file:data/nzcsrsc.n3#UCSAShelleyCommonRoom">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#RoomPrecision"/>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#UCSABuilding"/>
+        <rdfs:label xml:lang="en">UCSA Common Room (Shelley)</rdfs:label>
+    </nzcs:Room>
+
+    <nzcs:Room rdf:about="file:data/nzcsrsc.n3#UCSAUpperCommonRoom">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#RoomPrecision"/>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#UCSABuilding"/>
+        <rdfs:label xml:lang="en">UCSA Upper Common Room</rdfs:label>
+    </nzcs:Room>
+
+    <conf:PresentationSession rdf:about="file:data/nzcsrsc.n3#UsabilitySessionCHINZ09">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#CHINZ2009"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-06T17:00:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#OwenGlennBuilding"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-06T15:30:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Papers - Usability</rdfs:label>
+    </conf:PresentationSession>
+
+    <nzcs:Campus rdf:about="file:data/nzcsrsc.n3#WaikatoUni">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#BlockPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-37.788209</lat>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#Hamilton"/>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">175.318435</long>
+        <rdfs:label xml:lang="en">The University of Waikato</rdfs:label>
+    </nzcs:Campus>
+
+    <conf:SocialEvent rdf:about="file:data/nzcsrsc.n3#WelcomeCHINZ09">
+        <during rdf:resource="file:data/nzcsrsc.n3#CHINZ2009"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-06T11:00:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#OwenGlennBuilding"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-07-06T10:45:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Welcome</rdfs:label>
+    </conf:SocialEvent>
+
+    <nzcs:Building rdf:about="file:data/nzcsrsc.n3#WhareKai">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#BuildingPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-36.851526</lat>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#MaraeAuckland"/>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">174.773069</long>
+        <rdfs:label xml:lang="en">Whare Kai</rdfs:label>
+    </nzcs:Building>
+
+    <conf:PresentationSession rdf:about="file:data/nzcsrsc.n3#WorkshopsNZCSRSC08">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#NZCSRSC08"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-16T18:00:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#CBlock"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-04-16T15:40:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">BuildIT Workshop sessions</rdfs:label>
+    </conf:PresentationSession>
+
+    <conf:Session rdf:about="file:data/nzcsrsc.n3#WorkshopsNZCSRSC09">
+        <conf:sessionIn rdf:resource="file:data/nzcsrsc.n3#NZCSRSC09"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-08T17:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:data/nzcsrsc.n3#WhareKai"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-08T16:00:00+13:00</startsAt>
+    </conf:Session>
+</rdf:RDF>

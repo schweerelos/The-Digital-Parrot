@@ -1,0 +1,39 @@
+<rdf:RDF xmlns="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+    <owl:Ontology rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl">
+        <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl"/>
+    </owl:Ontology>
+
+    <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl#Event">
+        <comment xml:lang="en">An event (ie an experience shorter than a lifetime period), eg 'my holiday in Sydney'.</comment>
+        <label xml:lang="en">Event</label>
+        <subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl#Experience"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl#Experience">
+        <comment xml:lang="en">Something that the user of the system has experienced.</comment>
+        <label xml:lang="en">Experience</label>
+        <subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#TimedThing"/>
+        <owl:equivalentClass rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+            <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            <owl:onProperty rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl#wasThere"/>
+        </owl:equivalentClass>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl#LifetimePeriod">
+        <comment xml:lang="en">A lifetime period, eg 'while I was a uni student'.</comment>
+        <label xml:lang="en">Lifetime period</label>
+        <subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl#Experience"/>
+    </owl:Class>
+
+    <owl:DatatypeProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl#wasThere">
+        <comment xml:lang="en">To indicate whether the user experienced something.</comment>
+        <domain rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <label xml:lang="en">was there</label>
+        <range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl#Experience"/>
+    </owl:DatatypeProperty>
+</rdf:RDF>

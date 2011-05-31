@@ -1,0 +1,410 @@
+<rdf:RDF xmlns="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#"
+    xmlns:conf="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#"
+    xmlns:file="file:Sarah.n3#"
+    xmlns:interact="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:parrot="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:timeplace="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#">
+
+    <owl:Ontology rdf:about="file:Sarah.n3">
+        <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl"/>
+        <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl"/>
+        <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl"/>
+    </owl:Ontology>
+
+    <rdf:Description rdf:about="file:Sarah.n3#Aroha">
+        <rdfs:label xml:lang="en">Aroha</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Sarah.n3#Baycourt">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#BuildingPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-37.683018</lat>
+        <locatedIn rdf:resource="file:Sarah.n3#Tauranga"/>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">176.167461</long>
+        <rdfs:label xml:lang="en">Baycourt Community and Arts Centre</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Sarah.n3#CampusCafe">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#RoomPrecision"/>
+        <locatedIn rdf:resource="file:Sarah.n3#UniCampus"/>
+        <rdfs:label xml:lang="en">campus cafe</rdfs:label>
+    </rdf:Description>
+
+    <interact:Conversation rdf:about="file:Sarah.n3#CorrectConversation">
+        <interact:hasConversationPartner rdf:resource="file:Sarah.n3#Aroha"/>
+        <interact:hasTopic rdf:resource="file:Sarah.n3#OtherTopic"/>
+        <interact:hasTopic rdf:resource="file:Sarah.n3#Promotion"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-11-06T13:25:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:Sarah.n3#UniCampus"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-11-06T12:35:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <owl:Class rdf:about="file:Sarah.n3#Fieldtrip">
+        <parrot:showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</parrot:showThisType>
+        <rdfs:label xml:lang="en">Fieldtrip</rdfs:label>
+    </owl:Class>
+
+    <conf:Conference rdf:about="file:Sarah.n3#GSNZ2007">
+        <conf:partOfSeries rdf:resource="file:Sarah.n3#GSNZConferences"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-11-29T18:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:Sarah.n3#Baycourt"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-11-26T14:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Geosciences '07</rdfs:label>
+    </conf:Conference>
+
+    <conf:Conference rdf:about="file:Sarah.n3#GSNZ2008">
+        <conf:partOfSeries rdf:resource="file:Sarah.n3#GSNZConferences"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-11-26T18:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:Sarah.n3#TePapa"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-11-23T14:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Geosciences '08</rdfs:label>
+    </conf:Conference>
+
+    <conf:Conference rdf:about="file:Sarah.n3#GSNZ2009">
+        <conf:partOfSeries rdf:resource="file:Sarah.n3#GSNZConferences"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-11-27T18:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:Sarah.n3#OamaruOperaHouse"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-11-23T14:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">Geosciences '09</rdfs:label>
+    </conf:Conference>
+
+    <conf:ConferenceSeries rdf:about="file:Sarah.n3#GSNZConferences">
+        <rdfs:label xml:lang="en">NZGS Conferences</rdfs:label>
+    </conf:ConferenceSeries>
+
+    <rdf:Description rdf:about="file:Sarah.n3#HOlson">
+        <rdfs:label xml:lang="en">H. Olson</rdfs:label>
+    </rdf:Description>
+
+    <conf:ConferenceSeries rdf:about="file:Sarah.n3#ICESE">
+        <rdfs:label xml:lang="en">Int'l Conferences on Environmental Sciences and Engineering</rdfs:label>
+    </conf:ConferenceSeries>
+
+    <conf:Conference rdf:about="file:Sarah.n3#ICESE2008">
+        <conf:partOfSeries rdf:resource="file:Sarah.n3#ICESE"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-10-03T13:30:00+01:00</endsAt>
+        <locatedIn rdf:resource="file:Sarah.n3#Venice"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-10-01T13:00:00+01:00</startsAt>
+        <rdfs:label xml:lang="en">ICESE 2008</rdfs:label>
+    </conf:Conference>
+
+    <conf:Conference rdf:about="file:Sarah.n3#ICESE2009">
+        <conf:partOfSeries rdf:resource="file:Sarah.n3#ICESE"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-10-30T18:30:00+01:00</endsAt>
+        <locatedIn rdf:resource="file:Sarah.n3#Madrid"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-10-28T09:00:00+01:00</startsAt>
+        <rdfs:label xml:lang="en">ICESE 2009</rdfs:label>
+    </conf:Conference>
+
+    <conf:ConferenceSeries rdf:about="file:Sarah.n3#ICGSE">
+        <rdfs:label xml:lang="en">Int'l Conferences on Geological Sciences and Engineering</rdfs:label>
+    </conf:ConferenceSeries>
+
+    <rdf:Description rdf:about="file:Sarah.n3#ICGSE2009">
+        <conf:partOfSeries rdf:resource="file:Sarah.n3#ICGSE"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-11-12T18:30:00-02:00</endsAt>
+        <locatedIn rdf:resource="file:Sarah.n3#RioDeJaneiro"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-11-10T08:00:00-02:00</startsAt>
+        <rdfs:label xml:lang="en">ICGSE 2009</rdfs:label>
+    </rdf:Description>
+
+    <conf:Conference rdf:about="file:Sarah.n3#IGC33">
+        <conf:partOfSeries rdf:resource="file:Sarah.n3#IGC"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-08-14T13:30:00+01:00</endsAt>
+        <locatedIn rdf:resource="file:Sarah.n3#Oslo"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-08-06T10:00:00+01:00</startsAt>
+        <rdfs:label xml:lang="en">33rd IGC</rdfs:label>
+    </conf:Conference>
+
+    <rdf:Description rdf:about="file:Sarah.n3#Madrid">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#CityPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">40.4</lat>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-3.683333</long>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Sarah.n3#MtTeAroha">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#BlockPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-37.5388</lat>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">175.7091</long>
+        <rdfs:label xml:lang="en">Mount Te Aroha</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Sarah.n3#Oamaru">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#CityPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-45.084167</lat>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">170.980556</long>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Sarah.n3#OamaruOperaHouse">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#BuildingPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-45.09873</lat>
+        <locatedIn rdf:resource="file:Sarah.n3#Oamaru"/>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">170.970418</long>
+        <rdfs:label xml:lang="en">Oamaru Opera House</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Sarah.n3#OpenDay2009">
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-05-08T14:30:00+12:00</endsAt>
+        <locatedIn rdf:resource="file:Sarah.n3#UniCampus"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-05-08T09:00:00+12:00</startsAt>
+        <rdfs:label xml:lang="en">Open Day 2009</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Sarah.n3#Oslo">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#CityPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">59.949444</lat>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.756389</long>
+    </rdf:Description>
+
+    <interact:Conversation rdf:about="file:Sarah.n3#OtherArohaConversation">
+        <interact:hasConversationPartner rdf:resource="file:Sarah.n3#Aroha"/>
+        <interact:hasTopic rdf:resource="file:Sarah.n3#SupervisingResearchStudents"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-12-01T12:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:Sarah.n3#UniCampus"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-12-01T12:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <rdf:Description rdf:about="file:Sarah.n3#OtherTopic">
+        <rdfs:label xml:lang="en">Salary negotiation tips for women</rdfs:label>
+    </rdf:Description>
+
+    <conf:Talk rdf:about="file:Sarah.n3#PresentationAtIGC">
+        <file:aboutSite rdf:resource="file:Sarah.n3#SiteB"/>
+        <conf:inSession rdf:resource="file:Sarah.n3#SedimentSessionIGC"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-08-17T10:30:00+01:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-08-17T10:00:00+01:00</startsAt>
+        <rdfs:label xml:lang="en">Sediment formation on New Zealand's North Island</rdfs:label>
+    </conf:Talk>
+
+    <rdf:Description rdf:about="file:Sarah.n3#Promotion">
+        <rdfs:label xml:lang="en">Promotion</rdfs:label>
+    </rdf:Description>
+
+    <interact:Conversation rdf:about="file:Sarah.n3#RandomStuffOffCampus0">
+        <interact:hasConversationPartner rdf:resource="file:Sarah.n3#Steph"/>
+        <interact:hasTopic rdf:resource="file:Sarah.n3#MtTeAroha"/>
+        <during rdf:resource="file:Sarah.n3#GSNZ2008"/>
+        <locatedIn rdf:resource="file:Sarah.n3#Wellington"/>
+        <rdfs:label xml:lang="en">a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <file:Fieldtrip rdf:about="file:Sarah.n3#RandomStuffOffCampus1">
+        <file:fieldtripTo rdf:resource="file:Sarah.n3#MtTeAroha"/>
+        <file:with rdf:resource="file:Sarah.n3#Geoff"/>
+        <file:with rdf:resource="file:Sarah.n3#Mary"/>
+        <file:with rdf:resource="file:Sarah.n3#Richard"/>
+        <file:with rdf:resource="file:Sarah.n3#Susan"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-26T21:30:00+12:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-04-23T07:00:00+12:00</startsAt>
+        <rdfs:label xml:lang="en">a fieldtrip</rdfs:label>
+    </file:Fieldtrip>
+
+    <file:Fieldtrip rdf:about="file:Sarah.n3#RandomStuffOffCampus2">
+        <file:fieldtripTo rdf:resource="file:Sarah.n3#SiteA"/>
+        <file:with rdf:resource="file:Sarah.n3#Michael"/>
+        <file:with rdf:resource="file:Sarah.n3#Sara"/>
+        <file:with rdf:resource="file:Sarah.n3#Steph"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-06-28T21:30:00+12:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-06-25T07:00:00+12:00</startsAt>
+        <rdfs:label xml:lang="en">a fieldtrip</rdfs:label>
+    </file:Fieldtrip>
+
+    <file:Fieldtrip rdf:about="file:Sarah.n3#RandomStuffOffCampus3">
+        <file:fieldtripTo rdf:resource="file:Sarah.n3#MtTeAroha"/>
+        <file:with rdf:resource="file:Sarah.n3#Geoff"/>
+        <file:with rdf:resource="file:Sarah.n3#Mary"/>
+        <file:with rdf:resource="file:Sarah.n3#Richard"/>
+        <file:with rdf:resource="file:Sarah.n3#Susan"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-07-26T21:30:00+12:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-07-23T07:00:00+12:00</startsAt>
+        <rdfs:label xml:lang="en">a fieldtrip</rdfs:label>
+    </file:Fieldtrip>
+
+    <file:Fieldtrip rdf:about="file:Sarah.n3#RandomStuffOffCampus4">
+        <file:fieldtripTo rdf:resource="file:Sarah.n3#SiteA"/>
+        <file:with rdf:resource="file:Sarah.n3#Michael"/>
+        <file:with rdf:resource="file:Sarah.n3#Sara"/>
+        <file:with rdf:resource="file:Sarah.n3#Steph"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-09-05T21:30:00+12:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-09-01T07:00:00+12:00</startsAt>
+        <rdfs:label xml:lang="en">a fieldtrip</rdfs:label>
+    </file:Fieldtrip>
+
+    <file:Fieldtrip rdf:about="file:Sarah.n3#RandomStuffOffCampus5">
+        <file:fieldtripTo rdf:resource="file:Sarah.n3#SiteB"/>
+        <file:with rdf:resource="file:Sarah.n3#Geoff"/>
+        <file:with rdf:resource="file:Sarah.n3#Mary"/>
+        <file:with rdf:resource="file:Sarah.n3#Richard"/>
+        <file:with rdf:resource="file:Sarah.n3#Susan"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-05-18T21:30:00+12:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2007-05-15T07:00:00+12:00</startsAt>
+        <rdfs:label xml:lang="en">a fieldtrip</rdfs:label>
+    </file:Fieldtrip>
+
+    <file:Fieldtrip rdf:about="file:Sarah.n3#RandomStuffOffCampus6">
+        <file:fieldtripTo rdf:resource="file:Sarah.n3#SiteB"/>
+        <file:with rdf:resource="file:Sarah.n3#Michael"/>
+        <file:with rdf:resource="file:Sarah.n3#Sara"/>
+        <file:with rdf:resource="file:Sarah.n3#Steph"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-01-28T21:30:00+12:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-01-25T07:00:00+12:00</startsAt>
+        <rdfs:label xml:lang="en">a fieldtrip</rdfs:label>
+    </file:Fieldtrip>
+
+    <interact:Conversation rdf:about="file:Sarah.n3#RandomStuffOnCampus1">
+        <interact:hasConversationPartner rdf:resource="file:Sarah.n3#Richard"/>
+        <interact:hasTopic rdf:resource="file:Sarah.n3#RichardsResearch"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-05-01T11:45:00+12:00</endsAt>
+        <locatedIn rdf:resource="file:Sarah.n3#CampusCafe"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-05-01T11:00:00+12:00</startsAt>
+        <rdfs:label xml:lang="en">a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <interact:Conversation rdf:about="file:Sarah.n3#RandomStuffOnCampus2">
+        <interact:hasConversationPartner rdf:resource="file:Sarah.n3#Aroha"/>
+        <interact:hasConversationPartner rdf:resource="file:Sarah.n3#Sara"/>
+        <interact:hasConversationPartner rdf:resource="file:Sarah.n3#Steph"/>
+        <interact:hasTopic rdf:resource="file:Sarah.n3#OpenDay2009"/>
+        <interact:hasTopic rdf:resource="file:Sarah.n3#RandomStuffOffCampus2"/>
+        <interact:hasTopic rdf:resource="file:Sarah.n3#SiteA"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-10-01T14:30:00+13:00</endsAt>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-06-23T15:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:Sarah.n3#CampusCafe"/>
+        <locatedIn rdf:resource="file:Sarah.n3#SarahsOffice"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-10-01T14:00:00+13:00</startsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-06-23T14:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <interact:Conversation rdf:about="file:Sarah.n3#RandomStuffOnCampus3">
+        <interact:hasConversationPartner rdf:resource="file:Sarah.n3#Richard"/>
+        <interact:hasTopic rdf:resource="file:Sarah.n3#RandomStuffOffCampus5"/>
+        <interact:hasTopic rdf:resource="file:Sarah.n3#SiteB"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-01-21T14:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:Sarah.n3#SarahsOffice"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-01-21T14:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <interact:Conversation rdf:about="file:Sarah.n3#RandomStuffOnCampus4">
+        <interact:hasConversationPartner rdf:resource="file:Sarah.n3#Aroha"/>
+        <interact:hasTopic rdf:resource="file:Sarah.n3#OpenDay2009"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-10-01T14:30:00+13:00</endsAt>
+        <locatedIn rdf:resource="file:Sarah.n3#CampusCafe"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-10-01T14:00:00+13:00</startsAt>
+        <rdfs:label xml:lang="en">a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <rdf:Description rdf:about="file:Sarah.n3#RichardsResearch">
+        <rdfs:label xml:lang="en">Richard's research</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Sarah.n3#RioDeJaneiro">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#CityPrecision"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Sarah.n3#SarahsOffice">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#RoomPrecision"/>
+        <locatedIn rdf:resource="file:Sarah.n3#UniCampus"/>
+        <rdfs:label xml:lang="en">my office</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Sarah.n3#SedimentSessionIGC">
+        <conf:hasChair rdf:resource="file:Sarah.n3#HOlson"/>
+        <conf:sessionIn rdf:resource="file:Sarah.n3#IGC33"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-08-17T12:30:00+01:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-08-17T09:00:00+01:00</startsAt>
+        <rdfs:label xml:lang="en">Sediments</rdfs:label>
+    </rdf:Description>
+
+    <owl:Class rdf:about="file:Sarah.n3#Site">
+        <parrot:showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</parrot:showThisType>
+        <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#PlacedThing"/>
+    </owl:Class>
+
+    <rdf:Description rdf:about="file:Sarah.n3#SiteA">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#BuildingPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-38.380893</lat>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">177.807369</long>
+        <rdfs:label xml:lang="en">Site A</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Sarah.n3#SiteB">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#BuildingPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-38.380893</lat>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">177.807369</long>
+        <rdfs:label xml:lang="en">Site B</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Sarah.n3#SupervisingResearchStudents">
+        <rdfs:label xml:lang="en">Supervising research students</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Sarah.n3#Tauranga">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#CityPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-37.685833</lat>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">176.166667</long>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Sarah.n3#TePapa">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#BuildingPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-41.290589</lat>
+        <locatedIn rdf:resource="file:Sarah.n3#Wellington"/>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">174.782154</long>
+        <rdfs:label xml:lang="en">Te Papa Tongarewa</rdfs:label>
+    </rdf:Description>
+
+    <PlacedThing rdf:about="file:Sarah.n3#UniCampus">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#BlockPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-37.788209</lat>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">175.318435</long>
+        <rdfs:label xml:lang="en">uni campus</rdfs:label>
+    </PlacedThing>
+
+    <rdf:Description rdf:about="file:Sarah.n3#Venice">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#CityPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">45.4375</lat>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12.335833</long>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Sarah.n3#Wellington">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#CityPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-41.288889</lat>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">174.777222</long>
+    </rdf:Description>
+
+    <owl:ObjectProperty rdf:about="file:Sarah.n3#aboutSite">
+        <parrot:showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</parrot:showThisType>
+        <rdfs:label xml:lang="en">about site</rdfs:label>
+        <rdfs:range rdf:resource="file:Sarah.n3#Site"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="file:Sarah.n3#fieldtripTo">
+        <parrot:showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</parrot:showThisType>
+        <rdfs:domain rdf:resource="file:Sarah.n3#Fieldtrip"/>
+        <rdfs:label xml:lang="en">to</rdfs:label>
+        <rdfs:range rdf:resource="file:Sarah.n3#Site"/>
+        <owl:inverseOf rdf:resource="file:Sarah.n3#visitedDuring"/>
+    </owl:ObjectProperty>
+
+    <rdf:Description rdf:about="file:Sarah.n3#participatesIn">
+        <parrot:showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</parrot:showThisType>
+        <rdfs:label xml:lang="en">participates in</rdfs:label>
+    </rdf:Description>
+
+    <owl:ObjectProperty rdf:about="file:Sarah.n3#visitedDuring">
+        <parrot:showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</parrot:showThisType>
+        <rdfs:label xml:lang="en">visited during</rdfs:label>
+        <owl:inverseOf rdf:resource="file:Sarah.n3#fieldtripTo"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="file:Sarah.n3#with">
+        <parrot:showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</parrot:showThisType>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:inverseOf rdf:resource="file:Sarah.n3#participatesIn"/>
+    </owl:ObjectProperty>
+</rdf:RDF>

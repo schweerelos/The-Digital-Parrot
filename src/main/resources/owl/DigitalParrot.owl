@@ -1,0 +1,172 @@
+<rdf:RDF xmlns="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:Dig="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+    <owl:Ontology rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl">
+        <owl:backwardCompatibleWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2008/11/DigitalParrot.owl"/>
+        <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl"/>
+        <owl:priorVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2008/11/DigitalParrot.owl"/>
+    </owl:Ontology>
+
+    <Dig:TouchType rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#AddingTouch">
+        <comment xml:lang="en">To describe that an artefact was added to the system.</comment>
+    </Dig:TouchType>
+
+    <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#Artefact">
+        <comment xml:lang="en">An artefact in the system. Does not per se correspond to anything in the real world.</comment>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#AudioRecording">
+        <comment xml:lang="en">An audio recording in the system.</comment>
+        <subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#Artefact"/>
+        <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#Picture"/>
+        <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#TextNote"/>
+    </owl:Class>
+
+    <Dig:TouchType rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#ChangingTouch">
+        <comment xml:lang="en">To describe that an artefact was changed in the system</comment>
+    </Dig:TouchType>
+
+    <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#ContextualSnapshot">
+        <comment xml:lang="en">Something that captures the context (neither place nor time) of something.</comment>
+        <subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#Snapshot"/>
+        <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#TimeSnapshot"/>
+    </owl:Class>
+
+    <Dig:TouchType rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#CreatingTouch">
+        <comment xml:lang="en">To describe that an artefact in the system was created (within the system or externally)</comment>
+    </Dig:TouchType>
+
+    <Dig:TouchType rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#DeletingTouch">
+        <comment xml:lang="en">To describe that an artefact was deleted from the system</comment>
+    </Dig:TouchType>
+
+    <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#Picture">
+        <comment xml:lang="en">An image file in the system</comment>
+        <subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#Artefact"/>
+        <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#TextNote"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#PlaceSnapshot">
+        <comment xml:lang="en">Something that captures the place of something.</comment>
+        <subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#Snapshot"/>
+        <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#ContextualSnapshot"/>
+        <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#TimeSnapshot"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#Snapshot">
+        <comment xml:lang="en">Captures environmental conditions.</comment>
+        <subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:unionOf rdf:parseType="Resource">
+            <rdf:first rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#TimeSnapshot"/>
+            <rdf:rest rdf:parseType="Resource">
+                <rdf:first rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#PlaceSnapshot"/>
+                <rdf:rest rdf:parseType="Resource">
+                    <rdf:first rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#ContextualSnapshot"/>
+                    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                </rdf:rest>
+            </rdf:rest>
+        </owl:unionOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#TextNote">
+        <comment xml:lang="en">A textual note in the system</comment>
+        <subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#Artefact"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#TimeSnapshot">
+        <comment xml:lang="en">Something that captures the time of something.</comment>
+        <subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#Snapshot"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#Touch">
+        <comment xml:lang="en">To describe interactions with the system.</comment>
+        <subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <subClassOf rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+            <owl:onProperty rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#hasSnapshot"/>
+            <owl:someValuesFrom rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#Snapshot"/>
+        </subClassOf>
+        <subClassOf rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            <owl:onProperty rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#touchType"/>
+        </subClassOf>
+        <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#Snapshot"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#TouchType">
+        <comment xml:lang="en">To describe the nature of an interaction with the system.</comment>
+        <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#Artefact"/>
+        <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#Snapshot"/>
+        <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#Touch"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#VideoRecording">
+        <comment xml:lang="en">A video file in the system.</comment>
+        <subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#Artefact"/>
+        <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#Picture"/>
+        <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#TextNote"/>
+    </owl:Class>
+
+    <Dig:TouchType rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#ViewingTouch">
+        <comment xml:lang="en">To describe that an artefact was accessed within the system</comment>
+    </Dig:TouchType>
+
+    <owl:ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#hasArtefact">
+        <comment xml:lang="en">To link something with its artefact</comment>
+        <range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#Artefact"/>
+    </owl:ObjectProperty>
+
+    <owl:InverseFunctionalProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#hasSnapshot">
+        <domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#Touch"/>
+        <range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#Snapshot"/>
+    </owl:InverseFunctionalProperty>
+
+    <owl:DatatypeProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#hasUILabel">
+        <comment xml:lang="en">To link any object with the text it has in the user interface</comment>
+        <domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+    <owl:AnnotationProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#showThisType">
+        <comment xml:lang="en">types that are annotated with this property are shown in the Digital Parrot's user interface. The value of this property must be one of the string literal 'primary' and 'secondary', to indicate a primary or secondary type, respectively. Primary types may be shown more prominently than secondary types.</comment>
+    </owl:AnnotationProperty>
+
+    <owl:DatatypeProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#snapshotSource">
+        <domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#Snapshot"/>
+    </owl:DatatypeProperty>
+
+    <owl:FunctionalProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#touchType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#Touch"/>
+        <range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#TouchType"/>
+    </owl:FunctionalProperty>
+
+    <owl:InverseFunctionalProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#wasTouched">
+        <domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#Artefact"/>
+        <range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#Touch"/>
+    </owl:InverseFunctionalProperty>
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Resource">
+            <rdf:first rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#AddingTouch"/>
+            <rdf:rest rdf:parseType="Resource">
+                <rdf:first rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#ViewingTouch"/>
+                <rdf:rest rdf:parseType="Resource">
+                    <rdf:first rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#CreatingTouch"/>
+                    <rdf:rest rdf:parseType="Resource">
+                        <rdf:first rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#DeletingTouch"/>
+                        <rdf:rest rdf:parseType="Resource">
+                            <rdf:first rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#ChangingTouch"/>
+                            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        </rdf:rest>
+                    </rdf:rest>
+                </rdf:rest>
+            </rdf:rest>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,546 @@
+<rdf:RDF xmlns="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#"
+    xmlns:conf="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#"
+    xmlns:file="file:Eric.n3#"
+    xmlns:interact="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:parrot="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:timeplace="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#">
+
+    <owl:Ontology rdf:about="file:Eric.n3">
+        <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl"/>
+        <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl"/>
+        <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl"/>
+    </owl:Ontology>
+
+    <rdf:Description rdf:about="file:Eric.n3#ABagirov">
+        <rdfs:label xml:lang="en">A. Bagirov</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#ACoster">
+        <rdfs:label xml:lang="en">A. Coster</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#AEberhard">
+        <rdfs:label xml:lang="en">A. Eberhard</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#AMiller">
+        <rdfs:label xml:lang="en">Ann Miller</rdfs:label>
+    </rdf:Description>
+
+    <conf:Conference rdf:about="file:Eric.n3#ANZIAM2008">
+        <conf:partOfSeries rdf:resource="file:Eric.n3#ANZIAMConferences"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-02-07T13:20:00+10:00</endsAt>
+        <locatedIn rdf:resource="file:Eric.n3#CarringtonKatoomba"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-02-03T19:00:00+10:00</startsAt>
+    </conf:Conference>
+
+    <conf:Conference rdf:about="file:Eric.n3#ANZIAM2009">
+        <conf:partOfSeries rdf:resource="file:Eric.n3#ANZIAMConferences"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-05T13:20:00+10:00</endsAt>
+        <locatedIn rdf:resource="file:Eric.n3#RydgesOasisResortCaloundra"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-01T19:00:00+10:00</startsAt>
+    </conf:Conference>
+
+    <rdf:Description rdf:about="file:Eric.n3#APlumridge">
+        <rdfs:label xml:lang="en">A. Plumridge</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#ATordesillas">
+        <rdfs:label xml:lang="en">A. Tordesillas</rdfs:label>
+    </rdf:Description>
+
+    <conf:Break rdf:about="file:Eric.n3#AfternoonTeaANZIAM2008">
+        <during rdf:resource="file:Eric.n3#ANZIAM2008"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-02-04T16:00:00+10:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-02-04T15:30:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">Afternoon tea</rdfs:label>
+    </conf:Break>
+
+    <rdf:Description rdf:about="file:Eric.n3#Australia">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#ContinentPrecision"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#BWhiten">
+        <rdfs:label xml:lang="en">B. Whiten</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#BallRoomCarrington">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#RoomPrecision"/>
+        <locatedIn rdf:resource="file:Eric.n3#CarringtonKatoomba"/>
+        <rdfs:label>The Ballroom</rdfs:label>
+    </rdf:Description>
+
+    <owl:Class rdf:about="file:Eric.n3#Book">
+        <parrot:showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</parrot:showThisType>
+    </owl:Class>
+
+    <rdf:Description rdf:about="file:Eric.n3#Caloundra">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#CityPrecision"/>
+        <locatedIn rdf:resource="file:Eric.n3#Queensland"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#CarringtonKatoomba">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#BuildingPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-33.713113</lat>
+        <locatedIn rdf:resource="file:Eric.n3#Katoomba"/>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">150.310923</long>
+        <rdfs:label xml:lang="en">The Carrington</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#ELam">
+        <rdfs:label xml:lang="en">E. Lam</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#EricsResearch">
+        <rdfs:label xml:lang="en">My research</rdfs:label>
+    </rdf:Description>
+
+    <interact:Conversation rdf:about="file:Eric.n3#FifthRandomConvo">
+        <interact:hasConversationPartner rdf:resource="file:Eric.n3#JHearne"/>
+        <during rdf:resource="file:Eric.n3#PosterSessionANZIAM2008"/>
+        <rdfs:label xml:lang="en">a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <interact:Conversation rdf:about="file:Eric.n3#FirstConvoANZIAM2008">
+        <interact:hasConversationPartner rdf:resource="file:Eric.n3#YStokes"/>
+        <interact:hasTopic rdf:resource="file:Eric.n3#EricsResearch"/>
+        <during rdf:resource="file:Eric.n3#PosterSessionANZIAM2008"/>
+        <locatedIn rdf:resource="file:Eric.n3#BallRoomCarrington"/>
+        <rdfs:label xml:lang="en">a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <interact:Conversation rdf:about="file:Eric.n3#FirstConvoANZIAM2009">
+        <interact:hasConversationPartner rdf:resource="file:Eric.n3#PKeeler"/>
+        <interact:hasTopic rdf:resource="file:Eric.n3#PKeelersResearch"/>
+        <interact:hasTopic rdf:resource="file:Eric.n3#SchedulingRoutingNetworks"/>
+        <interact:hasTopic rdf:resource="file:Eric.n3#StochasticsInNetworks"/>
+        <during rdf:resource="file:Eric.n3#PosterSessionANZIAM2009"/>
+        <locatedIn rdf:resource="file:Eric.n3#VerandaRoom"/>
+        <rdfs:label xml:lang="en">a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <conf:PresentationSession rdf:about="file:Eric.n3#FirstMondayMorningStateRoomSession">
+        <conf:hasChair rdf:resource="file:Eric.n3#JHearne"/>
+        <conf:sessionIn rdf:resource="file:Eric.n3#ANZIAM2009"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T10:25:00+10:00</endsAt>
+        <locatedIn rdf:resource="file:Eric.n3#StateRoom"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T09:30:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">a conference session</rdfs:label>
+    </conf:PresentationSession>
+
+    <rdf:Description rdf:about="file:Eric.n3#FirstMondayMorningStateRoomSessionFirstTalk">
+        <conf:hasPresenter rdf:resource="file:Eric.n3#SAbdRahman"/>
+        <conf:inSession rdf:resource="file:Eric.n3#FirstMondayMorningStateRoomSession"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T09:45:00+10:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T09:30:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">Freight train scheduling on a single track network</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#FirstMondayMorningStateRoomSessionSecondTalk">
+        <conf:hasPresenter rdf:resource="file:Eric.n3#PKeeler"/>
+        <conf:inSession rdf:resource="file:Eric.n3#FirstMondayMorningStateRoomSession"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T10:05:00+10:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T09:50:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">Studying the stochastic behaviour of hops under a greedy routing scheme in sensor networks.</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#FirstMondayMorningStateRoomSessionThirdTalk">
+        <conf:hasPresenter rdf:resource="file:Eric.n3#BWhiten"/>
+        <conf:inSession rdf:resource="file:Eric.n3#FirstMondayMorningStateRoomSession"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T10:25:00+10:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T10:10:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">A simple deduction algorithm</rdfs:label>
+    </rdf:Description>
+
+    <conf:PresentationSession rdf:about="file:Eric.n3#FirstMondayMorningVerandaRoomSession">
+        <conf:hasChair rdf:resource="file:Eric.n3#RAnderssen"/>
+        <conf:sessionIn rdf:resource="file:Eric.n3#ANZIAM2009"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T10:25:00+10:00</endsAt>
+        <locatedIn rdf:resource="file:Eric.n3#VerandaRoom"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T09:30:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">a conference session</rdfs:label>
+    </conf:PresentationSession>
+
+    <rdf:Description rdf:about="file:Eric.n3#FirstMondayMorningVerandaRoomSessionFirstTalk">
+        <conf:hasPresenter rdf:resource="file:Eric.n3#MSuchorsky"/>
+        <conf:inSession rdf:resource="file:Eric.n3#FirstMondayMorningVerandaRoomSession"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T09:45:00+10:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T09:30:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">Three oscillator model of the heartbeat generator</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#FirstMondayMorningVerandaRoomSessionSecondTalk">
+        <conf:hasPresenter rdf:resource="file:Eric.n3#WPhillips"/>
+        <conf:inSession rdf:resource="file:Eric.n3#FirstMondayMorningVerandaRoomSession"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T10:05:00+10:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T09:50:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">Impulsively generated drops</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#FirstMondayMorningVerandaRoomSessionThirdTalk">
+        <conf:hasPresenter rdf:resource="file:Eric.n3#MPage"/>
+        <conf:inSession rdf:resource="file:Eric.n3#FirstMondayMorningVerandaRoomSession"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T10:25:00+10:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T10:10:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">Nonlinear diffusion-driven flow in a stratified fluid</rdfs:label>
+    </rdf:Description>
+
+    <interact:Conversation rdf:about="file:Eric.n3#FirstRandomConvo">
+        <interact:hasConversationPartner rdf:resource="file:Eric.n3#ELam"/>
+        <during rdf:resource="file:Eric.n3#OtherPosterSession"/>
+        <rdfs:label xml:lang="en">a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <interact:Conversation rdf:about="file:Eric.n3#FourthRandomConvo">
+        <interact:hasConversationPartner rdf:resource="file:Eric.n3#JHearne"/>
+        <during rdf:resource="file:Eric.n3#PosterSessionANZIAM2008"/>
+        <rdfs:label xml:lang="en">a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <rdf:Description rdf:about="file:Eric.n3#HAnjomshoa">
+        <rdfs:label xml:lang="en">H. Anjomshoa</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#HPossingham">
+        <rdfs:label xml:lang="en">H. Possingham</rdfs:label>
+    </rdf:Description>
+
+    <file:Book rdf:about="file:Eric.n3#IndustrialMathematics">
+        <rdfs:label xml:lang="en">Industrial Mathematics</rdfs:label>
+    </file:Book>
+
+    <conf:KeynoteTalk rdf:about="file:Eric.n3#InvitedTalkMondayMorning">
+        <conf:hasPresenter rdf:resource="file:Eric.n3#JHill"/>
+        <conf:inSession rdf:resource="file:Eric.n3#InvitedTalkSessionMondayMorning"/>
+        <rdfs:label xml:lang="en">Geometry and mechanics of carbon nanotubes and gigahertz nano-oscillators</rdfs:label>
+    </conf:KeynoteTalk>
+
+    <conf:PresentationSession rdf:about="file:Eric.n3#InvitedTalkSessionANZIAM2008">
+        <conf:hasChair rdf:resource="file:Eric.n3#AEberhard"/>
+        <conf:sessionIn rdf:resource="file:Eric.n3#ANZIAM2008"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-02-04T14:30:00+10:00</endsAt>
+        <locatedIn rdf:resource="file:Eric.n3#LibraryCarrington"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-02-04T13:00:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">a keynote session</rdfs:label>
+    </conf:PresentationSession>
+
+    <conf:PresentationSession rdf:about="file:Eric.n3#InvitedTalkSessionMondayMorning">
+        <conf:hasChair rdf:resource="file:Eric.n3#ATordesillas"/>
+        <conf:sessionIn rdf:resource="file:Eric.n3#ANZIAM2009"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T09:20:00+10:00</endsAt>
+        <locatedIn rdf:resource="file:Eric.n3#VerandaRoom"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T08:30:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">Invited Talk Monday Morning</rdfs:label>
+    </conf:PresentationSession>
+
+    <conf:KeynoteTalk rdf:about="file:Eric.n3#InvitedTalkYStokes">
+        <conf:inSession rdf:resource="file:Eric.n3#InvitedTalkSessionANZIAM2008"/>
+        <rdfs:label xml:lang="en">A mathematical perspective on dripping honey</rdfs:label>
+    </conf:KeynoteTalk>
+
+    <rdf:Description rdf:about="file:Eric.n3#JHearne">
+        <rdfs:label xml:lang="en">J. Hearne</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#JHill">
+        <rdfs:label xml:lang="en">J. Hill</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#Katoomba">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#CityPrecision"/>
+        <locatedIn rdf:resource="file:Eric.n3#NewSouthWales"/>
+        <rdfs:label xml:lang="en">Katoomba</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#LibraryCarrington">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#RoomPrecision"/>
+        <locatedIn rdf:resource="file:Eric.n3#CarringtonKatoomba"/>
+        <rdfs:label xml:lang="en">The Library</rdfs:label>
+    </rdf:Description>
+
+    <conf:Break rdf:about="file:Eric.n3#LunchANZIAM2008">
+        <during rdf:resource="file:Eric.n3#ANZIAM2008"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-02-07T13:00:00+10:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-02-03T12:00:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">Lunch</rdfs:label>
+    </conf:Break>
+
+    <conf:Break rdf:about="file:Eric.n3#LunchMonday">
+        <during rdf:resource="file:Eric.n3#ANZIAM2009"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T13:20:00+10:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T12:20:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">Lunch</rdfs:label>
+    </conf:Break>
+
+    <rdf:Description rdf:about="file:Eric.n3#MDunbar">
+        <rdfs:label xml:lang="en">M. Dunbar</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#MPage">
+        <rdfs:label xml:lang="en">M. Page</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#MSuchorsky">
+        <rdfs:label xml:lang="en">M. Suchorsky</rdfs:label>
+    </rdf:Description>
+
+    <conf:Break rdf:about="file:Eric.n3#MorningTeaMonday">
+        <during rdf:resource="file:Eric.n3#ANZIAM2009"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T11:00:00+10:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T10:30:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">Morning tea</rdfs:label>
+    </conf:Break>
+
+    <rdf:Description rdf:about="file:Eric.n3#NewSouthWales">
+        <locatedIn rdf:resource="file:Eric.n3#Australia"/>
+        <rdfs:label xml:lang="en">NSW</rdfs:label>
+    </rdf:Description>
+
+    <conf:SocialEvent rdf:about="file:Eric.n3#OpeningANZIAM2009">
+        <during rdf:resource="file:Eric.n3#ANZIAM2009"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T08:30:00+10:00</endsAt>
+        <locatedIn rdf:resource="file:Eric.n3#VerandaRoom"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T08:15:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">Conference Opening</rdfs:label>
+    </conf:SocialEvent>
+
+    <conf:PosterSession rdf:about="file:Eric.n3#OtherPosterSession">
+        <rdfs:label xml:lang="en">Poster Session</rdfs:label>
+    </conf:PosterSession>
+
+    <rdf:Description rdf:about="file:Eric.n3#PKeeler">
+        <rdfs:label xml:lang="en">Paul Keeler</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#PKeelersResearch">
+        <rdfs:label xml:lang="en">Paul's research</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#PMeyer">
+        <rdfs:label xml:lang="en">Peter Meyer</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#PetersResearch">
+        <rdfs:label xml:lang="en">Peter's research</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#PhDExperience">
+        <rdfs:label xml:lang="en">Doing a PhD</rdfs:label>
+    </rdf:Description>
+
+    <conf:PosterSession rdf:about="file:Eric.n3#PosterSessionANZIAM2008">
+        <conf:sessionIn rdf:resource="file:Eric.n3#ANZIAM2008"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-02-04T15:30:00+10:00</endsAt>
+        <locatedIn rdf:resource="file:Eric.n3#BallRoomCarrington"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2008-02-04T14:30:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">Poster Session</rdfs:label>
+    </conf:PosterSession>
+
+    <conf:PosterSession rdf:about="file:Eric.n3#PosterSessionANZIAM2009">
+        <conf:sessionIn rdf:resource="file:Eric.n3#ANZIAM2009"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T13:20:00+10:00</endsAt>
+        <locatedIn rdf:resource="file:Eric.n3#VerandaRoom"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T12:20:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">Poster Session</rdfs:label>
+    </conf:PosterSession>
+
+    <rdf:Description rdf:about="file:Eric.n3#Queensland">
+        <locatedIn rdf:resource="file:Eric.n3#Australia"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#RAnderssen">
+        <rdfs:label xml:lang="en">R. Anderssen</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#RKing">
+        <rdfs:label xml:lang="en">Robert King</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#RydgesOasisResortCaloundra">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#BlockPrecision"/>
+        <lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-25.335448</lat>
+        <locatedIn rdf:resource="file:Eric.n3#Caloundra"/>
+        <long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">135.745076</long>
+        <rdfs:label xml:lang="en">Rydges Oasis Resort</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#SAbdRahman">
+        <rdfs:label xml:lang="en">S. Abd Rahman</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#SchedulingRoutingNetworks">
+        <rdfs:label xml:lang="en">Scheduling and routing in networks</rdfs:label>
+    </rdf:Description>
+
+    <interact:Conversation rdf:about="file:Eric.n3#SecondConvoANZIAM2008">
+        <interact:hasConversationPartner rdf:resource="file:Eric.n3#PMeyer"/>
+        <interact:hasTopic rdf:resource="file:Eric.n3#EricsResearch"/>
+        <interact:hasTopic rdf:resource="file:Eric.n3#PetersResearch"/>
+        <interact:hasTopic rdf:resource="file:Eric.n3#PhDExperience"/>
+        <during rdf:resource="file:Eric.n3#PosterSessionANZIAM2008"/>
+        <locatedIn rdf:resource="file:Eric.n3#BallRoomCarrington"/>
+        <rdfs:label xml:lang="en">a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <interact:Conversation rdf:about="file:Eric.n3#SecondConvoANZIAM2009">
+        <interact:hasConversationPartner rdf:resource="file:Eric.n3#SAbdRahman"/>
+        <interact:hasTopic rdf:resource="file:Eric.n3#SchedulingRoutingNetworks"/>
+        <during rdf:resource="file:Eric.n3#PosterSessionANZIAM2009"/>
+        <rdfs:label xml:lang="en">a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <conf:PresentationSession rdf:about="file:Eric.n3#SecondMondayMorningStateRoomSession">
+        <conf:hasChair rdf:resource="file:Eric.n3#AEberhard"/>
+        <conf:sessionIn rdf:resource="file:Eric.n3#ANZIAM2009"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T12:20:00+10:00</endsAt>
+        <locatedIn rdf:resource="file:Eric.n3#StateRoom"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T11:00:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">a conference sesssion</rdfs:label>
+    </conf:PresentationSession>
+
+    <rdf:Description rdf:about="file:Eric.n3#SecondMondayMorningStateRoomSessionFirstTalk">
+        <conf:hasPresenter rdf:resource="file:Eric.n3#MDunbar"/>
+        <conf:inSession rdf:resource="file:Eric.n3#SecondMondayMorningStateRoomSession"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T11:15:00+10:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T11:00:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">Current developments in robust airline scheduling and aircraft routing</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#SecondMondayMorningStateRoomSessionFourthTalk">
+        <conf:hasPresenter rdf:resource="file:Eric.n3#ABagirov"/>
+        <conf:inSession rdf:resource="file:Eric.n3#SecondMondayMorningStateRoomSession"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T12:15:00+10:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T12:00:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">Dimensionality reduction for data classification</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#SecondMondayMorningStateRoomSessionSecondTalk">
+        <conf:hasPresenter rdf:resource="file:Eric.n3#HAnjomshoa"/>
+        <conf:inSession rdf:resource="file:Eric.n3#SecondMondayMorningStateRoomSession"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T11:35:00+10:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T11:20:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">Stable cycles in transport schedules</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#SecondMondayMorningStateRoomSessionThirdTalk">
+        <conf:hasPresenter rdf:resource="file:Eric.n3#APlumridge"/>
+        <conf:inSession rdf:resource="file:Eric.n3#SecondMondayMorningStateRoomSession"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T11:55:00+10:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T11:40:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">Water management in the Murray-Darling basin</rdfs:label>
+    </rdf:Description>
+
+    <conf:PresentationSession rdf:about="file:Eric.n3#SecondMondayMorningVerandaRoomSession">
+        <conf:hasChair rdf:resource="file:Eric.n3#HPossingham"/>
+        <conf:sessionIn rdf:resource="file:Eric.n3#ANZIAM2009"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T12:20:00+10:00</endsAt>
+        <locatedIn rdf:resource="file:Eric.n3#VerandaRoom"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T11:00:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">a conference sesssion</rdfs:label>
+    </conf:PresentationSession>
+
+    <rdf:Description rdf:about="file:Eric.n3#SecondMondayMorningVerandaRoomSessionFirstTalk">
+        <conf:hasPresenter rdf:resource="file:Eric.n3#ELam"/>
+        <conf:inSession rdf:resource="file:Eric.n3#SecondMondayMorningVerandaRoomSession"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T11:15:00+10:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T11:00:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">On the consequences of friction in granular systems: a study of the origins of hyperstaticity</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#SecondMondayMorningVerandaRoomSessionFourthTalk">
+        <conf:hasPresenter rdf:resource="file:Eric.n3#ATordesillas"/>
+        <conf:inSession rdf:resource="file:Eric.n3#SecondMondayMorningVerandaRoomSession"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T12:15:00+10:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T12:00:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">Pesky particles pacified in pixels</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#SecondMondayMorningVerandaRoomSessionSecondTalk">
+        <conf:hasPresenter rdf:resource="file:Eric.n3#TTshaikiwsky"/>
+        <conf:inSession rdf:resource="file:Eric.n3#SecondMondayMorningVerandaRoomSession"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T11:35:00+10:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T11:20:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">The Jekyll and Hyde in granular media: in search of the trigger event</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#SecondMondayMorningVerandaRoomSessionThirdTalk">
+        <conf:hasPresenter rdf:resource="file:Eric.n3#ACoster"/>
+        <conf:inSession rdf:resource="file:Eric.n3#SecondMondayMorningVerandaRoomSession"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T11:55:00+10:00</endsAt>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-02T11:40:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">Dissecting the movement of glucose transporters</rdfs:label>
+    </rdf:Description>
+
+    <interact:Conversation rdf:about="file:Eric.n3#SecondRandomConvo">
+        <interact:hasConversationPartner rdf:resource="file:Eric.n3#RKing"/>
+        <during rdf:resource="file:Eric.n3#OtherPosterSession"/>
+        <rdfs:label xml:lang="en">a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <interact:Conversation rdf:about="file:Eric.n3#SeventhRandomConvo">
+        <interact:hasConversationPartner rdf:resource="file:Eric.n3#APlumridge"/>
+        <interact:hasConversationPartner rdf:resource="file:Eric.n3#JHearne"/>
+        <during rdf:resource="file:Eric.n3#PosterSessionANZIAM2009"/>
+        <rdfs:label xml:lang="en">a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <interact:Conversation rdf:about="file:Eric.n3#SixthRandomConvo">
+        <interact:hasConversationPartner rdf:resource="file:Eric.n3#HAnjomshoa"/>
+        <during rdf:resource="file:Eric.n3#PosterSessionANZIAM2008"/>
+        <rdfs:label xml:lang="en">a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <rdf:Description rdf:about="file:Eric.n3#StateRoom">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#RoomPrecision"/>
+        <locatedIn rdf:resource="file:Eric.n3#RydgesOasisResortCaloundra"/>
+        <rdfs:label xml:lang="en">State Room</rdfs:label>
+    </rdf:Description>
+
+    <file:Book rdf:about="file:Eric.n3#StochasticsInNetworks">
+        <rdfs:label xml:lang="en">Stochastics in Networks</rdfs:label>
+    </file:Book>
+
+    <rdf:Description rdf:about="file:Eric.n3#TTshaikiwsky">
+        <rdfs:label xml:lang="en">T. Tshaikiwsky</rdfs:label>
+    </rdf:Description>
+
+    <interact:Conversation rdf:about="file:Eric.n3#ThirdConvoANZIAM2008">
+        <interact:hasConversationPartner rdf:resource="file:Eric.n3#YStokes"/>
+        <interact:hasTopic rdf:resource="file:Eric.n3#EricsResearch"/>
+        <interact:hasTopic rdf:resource="file:Eric.n3#IndustrialMathematics"/>
+        <during rdf:resource="file:Eric.n3#AfternoonTeaANZIAM2008"/>
+        <locatedIn rdf:resource="file:Eric.n3#LibraryCarrington"/>
+        <rdfs:label xml:lang="en">a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <interact:Conversation rdf:about="file:Eric.n3#ThirdRandomConvo">
+        <interact:hasConversationPartner rdf:resource="file:Eric.n3#AMiller"/>
+        <during rdf:resource="file:Eric.n3#OtherPosterSession"/>
+        <rdfs:label xml:lang="en">a conversation</rdfs:label>
+    </interact:Conversation>
+
+    <rdf:Description rdf:about="file:Eric.n3#VerandaRoom">
+        <coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#RoomPrecision"/>
+        <locatedIn rdf:resource="file:Eric.n3#RydgesOasisResortCaloundra"/>
+        <rdfs:label xml:lang="en">Veranda Room</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="file:Eric.n3#WPhillips">
+        <rdfs:label xml:lang="en">W. Phillips</rdfs:label>
+    </rdf:Description>
+
+    <conf:SocialEvent rdf:about="file:Eric.n3#WelcomeBBQ">
+        <during rdf:resource="file:Eric.n3#ANZIAM2009"/>
+        <endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-01T23:59:59+10:00</endsAt>
+        <locatedIn rdf:resource="file:Eric.n3#RydgesOasisResortCaloundra"/>
+        <startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-02-01T19:00:00+10:00</startsAt>
+        <rdfs:label xml:lang="en">Welcome BBQ</rdfs:label>
+    </conf:SocialEvent>
+
+    <rdf:Description rdf:about="file:Eric.n3#YStokes">
+        <rdfs:label xml:lang="en">Yvonne Stroke</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>

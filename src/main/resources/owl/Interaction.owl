@@ -1,0 +1,126 @@
+<rdf:RDF xmlns="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+    <owl:Ontology rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl">
+        <comment xml:lang="en">Vocabulary to describe interactions between self and other people.</comment>
+        <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl"/>
+        <owl:imports rdf:resource="http://www.mindswap.org/2003/owl/foaf"/>
+    </owl:Ontology>
+
+    <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#Conversation">
+        <comment xml:lang="en">A conversation between self and at least one other person.</comment>
+        <label xml:lang="en">Conversation</label>
+        <subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl#Event"/>
+        <subClassOf rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+            <owl:onProperty rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner"/>
+            <owl:someValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        </subClassOf>
+        <subClassOf rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+            <owl:onProperty rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasTopic"/>
+            <owl:someValuesFrom rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#Topic"/>
+        </subClassOf>
+        <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#FirstMeeting"/>
+        <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#Topic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#FirstMeeting">
+        <comment xml:lang="en">The occasion when one first meets another person.</comment>
+        <label xml:lang="en">First Meeting</label>
+        <subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl#Event"/>
+        <subClassOf rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+            <owl:onProperty rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#newContact"/>
+            <owl:someValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        </subClassOf>
+        <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#Conversation"/>
+        <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#Topic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#Introduction">
+        <comment xml:lang="en">The occasion when one is introduced to another person by a third party.</comment>
+        <label xml:lang="en">Introduction</label>
+        <subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#FirstMeeting"/>
+        <subClassOf rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+            <owl:onProperty rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#introducer"/>
+            <owl:someValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        </subClassOf>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#Topic">
+        <comment xml:lang="en">A topic as dicussed in a conversation. To be used like a tag.</comment>
+        <label xml:lang="en">Topic</label>
+        <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#Conversation"/>
+        <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#FirstMeeting"/>
+    </owl:Class>
+
+    <owl:ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#conversationPartnerIn">
+        <comment xml:lang="en">To link a person to the conversations that one had with this person</comment>
+        <domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <label xml:lang="en">takes part in</label>
+        <range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#Conversation"/>
+        <owl:inverseOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner"/>
+    </owl:ObjectProperty>
+
+    <owl:FunctionalProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#firstMet">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <comment xml:lang="en">To describe since when one knows a person.</comment>
+        <domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <label xml:lang="en">was first met</label>
+        <range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#FirstMeeting"/>
+        <owl:inverseOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#newContact"/>
+    </owl:FunctionalProperty>
+
+    <owl:ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner">
+        <comment xml:lang="en">To link a conversation to the people one spoke with.</comment>
+        <domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#Conversation"/>
+        <label xml:lang="en">with</label>
+        <range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:inverseOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#conversationPartnerIn"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasTopic">
+        <comment xml:lang="en">To describe the topic of a conversation.</comment>
+        <domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#Conversation"/>
+        <label xml:lang="en">is about</label>
+        <range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#Topic"/>
+        <owl:inverseOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#topicIn"/>
+    </owl:ObjectProperty>
+
+    <owl:FunctionalProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#introducedAt">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <comment xml:lang="en">To link a person to the occasion when one was introduced to her/him</comment>
+        <domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <label xml:lang="en">was introduced at</label>
+        <range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#Introduction"/>
+        <subPropertyOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#firstMet"/>
+    </owl:FunctionalProperty>
+
+    <owl:ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#introducer">
+        <comment xml:lang="en">To link an introduction to the person(s) who did the introducing</comment>
+        <domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#Introduction"/>
+        <label xml:lang="en">was introduced by</label>
+        <range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:ObjectProperty>
+
+    <owl:InverseFunctionalProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#newContact">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <comment xml:lang="en">To describe who it is one met</comment>
+        <domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#FirstMeeting"/>
+        <label xml:lang="en">was the first meeting with</label>
+        <range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:inverseOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#firstMet"/>
+    </owl:InverseFunctionalProperty>
+
+    <owl:ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#topicIn">
+        <comment xml:lang="en">To link a topic to the conversations in which it occurs.</comment>
+        <domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#Topic"/>
+        <label xml:lang="en">is a topic in</label>
+        <range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#Conversation"/>
+        <owl:inverseOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasTopic"/>
+    </owl:ObjectProperty>
+</rdf:RDF>

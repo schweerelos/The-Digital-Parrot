@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>A Google Map</title>
+    <script src="http://maps.google.com/maps/api/js?sensor=false&amp;region=NZ"
+            type="text/javascript"></script>
+
+    <script type="text/javascript">
+    var map;
+    function initialize() {
+            var latlng = MAPCENTER;
+            var myOptions = {
+                zoom: ZOOMLEVEL,
+                      center: latlng,
+                      mapTypeId: google.maps.MapTypeId.ROADMAP,
+                      disableDefaultUI: true,
+                      navigationControl: true,
+                      mapTypeControl: false,
+                      scaleControl: false,
+                      navigationControlOptions: {
+                        style: google.maps.NavigationControlStyle.ZOOM_PAN,
+                        position: google.maps.ControlPosition.TOP_RIGHT
+                      }
+            };
+            map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+            google.maps.event.addListener(map, 'zoom_changed', function() {
+               text = "zoomChanged, zoom=" + map.getZoom();
+               window.status = text;
+            });
+
+            google.maps.event.addListener(map, 'bounds_changed', function() {
+               text = "boundsChanged, bounds=" + map.getBounds();
+               window.status = text;
+            });
+    }
+    </script>
+    <style type="text/css">
+            body, div { margin:0px; padding:0px; }
+    </style>
+  </head>
+
+  <body onload="initialize()">
+    <div id="map_canvas" style="width: 400px; height: 300px"></div>
+  </body>
+</html>

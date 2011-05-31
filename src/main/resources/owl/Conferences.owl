@@ -1,0 +1,321 @@
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+    <Ontology rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl">
+        <rdfs:comment xml:lang="en">Vocabulary for describing academic conferences.</rdfs:comment>
+        <imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl"/>
+        <imports rdf:resource="http://www.mindswap.org/2003/owl/foaf"/>
+    </Ontology>
+
+    <Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Break">
+        <rdfs:comment xml:lang="en">A break in the conference program</rdfs:comment>
+        <rdfs:label xml:lang="en">Break</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#TimedThing"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Conference"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#ConferenceSeries"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Poster"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Presentation"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Session"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#SocialEvent"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Track"/>
+    </Class>
+
+    <Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Conference">
+        <rdfs:comment xml:lang="en">An individual conference, for example HCI 2008.</rdfs:comment>
+        <rdfs:label xml:lang="en">Conference</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#PlacedThing"/>
+        <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#TimedThing"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Break"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#ConferenceSeries"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Poster"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Presentation"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Session"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#SocialEvent"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Track"/>
+    </Class>
+
+    <Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#ConferenceSeries">
+        <rdfs:comment xml:lang="en">A series of conferences, for example the series of HCI conferences.</rdfs:comment>
+        <rdfs:label xml:lang="en">Conference Series</rdfs:label>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Break"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Conference"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Poster"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Presentation"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Session"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#SocialEvent"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Track"/>
+    </Class>
+
+    <Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Demo">
+        <rdfs:comment xml:lang="en">A demonstration, usually of a piece of software.</rdfs:comment>
+        <rdfs:label xml:lang="en">Demo</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Presentation"/>
+    </Class>
+
+    <Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#DemoSession">
+        <rdfs:comment xml:lang="en">A session with demos.</rdfs:comment>
+        <rdfs:label xml:lang="en">Demo Session</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Session"/>
+        <rdfs:subClassOf rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+            <allValuesFrom rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Demo"/>
+            <onProperty rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#hasPresentation"/>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#PosterSession"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#PresentationSession"/>
+    </Class>
+
+    <Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#KeynoteTalk">
+        <rdfs:comment xml:lang="en">A keynote talk.</rdfs:comment>
+        <rdfs:label xml:lang="en">Keynote Talk</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Presentation"/>
+    </Class>
+
+    <Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Poster">
+        <rdfs:comment xml:lang="en">A poster as can be seen during a poster session. Note that this describes the actual poster; walk-throughs by the presenter are encoded as instances of PosterPresentation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Poster</rdfs:label>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Break"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Conference"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#ConferenceSeries"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Presentation"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Session"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#SocialEvent"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Track"/>
+    </Class>
+
+    <Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#PosterPresentation">
+        <rdfs:comment xml:lang="en">A walk-through for a poster in a poster session.</rdfs:comment>
+        <rdfs:label xml:lang="en">Poster Presentation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Presentation"/>
+    </Class>
+
+    <Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#PosterSession">
+        <rdfs:comment xml:lang="en">A poster session. Note that this has instances of PosterPresentation as its hasPresentation instances -- the Poster is used to describe the actual poster that is being shown.</rdfs:comment>
+        <rdfs:label xml:lang="en">Poster Session</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Session"/>
+        <rdfs:subClassOf rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+            <allValuesFrom rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#PosterPresentation"/>
+            <onProperty rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#hasPresentation"/>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#DemoSession"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#PresentationSession"/>
+    </Class>
+
+    <Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Presentation">
+        <rdfs:comment xml:lang="en">Something that happens in a session. Note that a typical paper presentation is a Talk, not a Presentation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Presentation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#PlacedThing"/>
+        <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#TimedThing"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Break"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Conference"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#ConferenceSeries"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Poster"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Session"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#SocialEvent"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Track"/>
+    </Class>
+
+    <Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#PresentationSession">
+        <rdfs:comment xml:lang="en">A session with talks, as opposed to a demo session or a poster session.</rdfs:comment>
+        <rdfs:label xml:lang="en">Presentation Session</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Session"/>
+        <rdfs:subClassOf rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+            <allValuesFrom rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Talk"/>
+            <onProperty rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#hasPresentation"/>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#DemoSession"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#PosterSession"/>
+    </Class>
+
+    <Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Session">
+        <rdfs:comment xml:lang="en">A session. Most conferences come divided into sessions.</rdfs:comment>
+        <rdfs:label xml:lang="en">Session</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#PlacedThing"/>
+        <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#TimedThing"/>
+        <rdfs:subClassOf rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+            <onProperty rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#hasPresentation"/>
+            <someValuesFrom rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Presentation"/>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Break"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Conference"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#ConferenceSeries"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Poster"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Presentation"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#SocialEvent"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Track"/>
+    </Class>
+
+    <Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#SocialEvent">
+        <rdfs:comment xml:lang="en">A social event, for example the conference dinner.</rdfs:comment>
+        <rdfs:label xml:lang="en">Social Event</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#PlacedThing"/>
+        <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#TimedThing"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Break"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Conference"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#ConferenceSeries"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Poster"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Presentation"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Session"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Track"/>
+    </Class>
+
+    <Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Talk">
+        <rdfs:comment xml:lang="en">A talk, usually with slides and by a single speaker.</rdfs:comment>
+        <rdfs:label xml:lang="en">Talk</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Presentation"/>
+    </Class>
+
+    <Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Track">
+        <rdfs:comment xml:lang="en">A track, for conferences that have more than one parallel track.</rdfs:comment>
+        <rdfs:label xml:lang="en">Track</rdfs:label>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Break"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Conference"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#ConferenceSeries"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Poster"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Presentation"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Session"/>
+        <disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#SocialEvent"/>
+    </Class>
+
+    <Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Tutorial">
+        <rdfs:comment xml:lang="en">A tutorial.</rdfs:comment>
+        <rdfs:label xml:lang="en">Tutorial</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Presentation"/>
+    </Class>
+
+    <Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#TutorialSession">
+        <rdfs:comment xml:lang="en">A session with tutorials.</rdfs:comment>
+        <rdfs:label xml:lang="en">Tutorial Session</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Session"/>
+        <rdfs:subClassOf rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+            <allValuesFrom rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Tutorial"/>
+            <onProperty rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#hasPresentation"/>
+        </rdfs:subClassOf>
+    </Class>
+
+    <Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Workshop">
+        <rdfs:comment xml:lang="en">A workshop. Typically, workshops are made up of talks, but they might have other things too (keynotes etc).</rdfs:comment>
+        <rdfs:label xml:lang="en">Workshop</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Session"/>
+    </Class>
+
+    <Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#WorkshopSession">
+        <rdfs:comment xml:lang="en">A session consisting of workshops.</rdfs:comment>
+        <rdfs:label xml:lang="en">Workshop Session</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Session"/>
+    </Class>
+
+    <ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#chairs">
+        <rdfs:comment xml:lang="en">The act of chairing a session or conference.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:label xml:lang="en">chairs</rdfs:label>
+        <rdfs:range rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+            <unionOf rdf:parseType="Resource">
+                <rdf:first rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Session"/>
+                <rdf:rest rdf:parseType="Resource">
+                    <rdf:first rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Conference"/>
+                    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                </rdf:rest>
+            </unionOf>
+        </rdfs:range>
+        <inverseOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#hasChair"/>
+    </ObjectProperty>
+
+    <ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#hasChair">
+        <rdfs:comment xml:lang="en">To link to the chair of a session or conference.</rdfs:comment>
+        <rdfs:domain rdf:parseType="Resource">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+            <unionOf rdf:parseType="Resource">
+                <rdf:first rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Conference"/>
+                <rdf:rest rdf:parseType="Resource">
+                    <rdf:first rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Session"/>
+                    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                </rdf:rest>
+            </unionOf>
+        </rdfs:domain>
+        <rdfs:label xml:lang="en">has chair</rdfs:label>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <inverseOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#chairs"/>
+    </ObjectProperty>
+
+    <ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#hasInstance">
+        <rdfs:comment xml:lang="en">To link a conference series to its instances.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#ConferenceSeries"/>
+        <rdfs:label xml:lang="en">has instance</rdfs:label>
+        <rdfs:range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Conference"/>
+        <inverseOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#partOfSeries"/>
+    </ObjectProperty>
+
+    <ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#hasPresentation">
+        <rdfs:comment xml:lang="en">To link a session to its presentations. This would typically be used with an instance of a _subclass_ of Session and an instance of a _subclass_ of Presentation.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Session"/>
+        <rdfs:label xml:lang="en">has presentation</rdfs:label>
+        <rdfs:range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Presentation"/>
+        <inverseOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#inSession"/>
+    </ObjectProperty>
+
+    <ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#hasPresenter">
+        <rdfs:comment xml:lang="en">To link a presentation to its presenter(s).</rdfs:comment>
+        <rdfs:domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Presentation"/>
+        <rdfs:label xml:lang="en">has presenter</rdfs:label>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <inverseOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#presents"/>
+    </ObjectProperty>
+
+    <InverseFunctionalProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#hasSession">
+        <rdfs:comment xml:lang="en">To link something to its session(s). Domain would typically be a conference or track but might be a workshop.</rdfs:comment>
+        <rdfs:label xml:lang="en">has session</rdfs:label>
+        <rdfs:range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Session"/>
+    </InverseFunctionalProperty>
+
+    <InverseFunctionalProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#hasTrack">
+        <rdfs:comment xml:lang="en">To link something to its track(s). Domain would typically be a conference but might be a workshop.</rdfs:comment>
+        <rdfs:label xml:lang="en">has track</rdfs:label>
+        <rdfs:range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Track"/>
+    </InverseFunctionalProperty>
+
+    <ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#inSession">
+        <rdfs:comment xml:lang="en">To link a presentation to its session. Also see comment on the inverse property.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Presentation"/>
+        <rdfs:label xml:lang="en">in session</rdfs:label>
+        <rdfs:range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Session"/>
+        <inverseOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#hasPresentation"/>
+    </ObjectProperty>
+
+    <ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#partOfSeries">
+        <rdfs:comment xml:lang="en">Denotes that a conference is part of a conference series. For example, NZCSRSC 2007 was a conference in the NZCSRSC series.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Conference"/>
+        <rdfs:label xml:lang="en">part of series</rdfs:label>
+        <rdfs:range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#ConferenceSeries"/>
+        <inverseOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#hasInstance"/>
+    </ObjectProperty>
+
+    <ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#presents">
+        <rdfs:comment xml:lang="en">To link a presenter to his/her presentation(s).</rdfs:comment>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:label xml:lang="en">presents</rdfs:label>
+        <rdfs:range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Presentation"/>
+        <inverseOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#hasPresenter"/>
+    </ObjectProperty>
+
+    <FunctionalProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#sessionIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <rdfs:comment xml:lang="en">To link a session to its bigger event. Range would typically be a conference or track but might be a workshop.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Session"/>
+        <rdfs:label xml:lang="en">session in</rdfs:label>
+    </FunctionalProperty>
+
+    <FunctionalProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#trackIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <rdfs:comment xml:lang="en">To link a track to its bigger event. Range would typically be a conference but might be a workshop.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Track"/>
+        <rdfs:label xml:lang="en">track in</rdfs:label>
+    </FunctionalProperty>
+</rdf:RDF>
